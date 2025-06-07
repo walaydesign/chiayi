@@ -7,7 +7,7 @@
 body {
   font-family: "Noto Sans TC", sans-serif;
   color: #4b4b4b;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 a {
@@ -67,6 +67,10 @@ button {
 
 .header.border-orange::after {
   background-color: #f6ab00;
+}
+
+.header.border-green::after {
+  background-color: #e6e400;
 }
 
 .header .container {
@@ -191,7 +195,7 @@ button {
   background-color: #fbf1db;
 }
 
-.header_nav_item.color-orange:hover > a {
+.header_nav_item.color-orange:hover > a, .header_nav_item.color-orange.active > a {
   background-color: #f6ab00;
 }
 
@@ -212,7 +216,7 @@ button {
   background-color: #d3ecf8;
 }
 
-.header_nav_item.color-blue:hover > a {
+.header_nav_item.color-blue:hover > a, .header_nav_item.color-blue.active > a {
   background-color: #0ca7f1;
 }
 
@@ -233,7 +237,7 @@ button {
   background-color: #e9fbd6;
 }
 
-.header_nav_item.color-green:hover > a {
+.header_nav_item.color-green:hover > a, .header_nav_item.color-green.active > a {
   background-color: #abcd03;
 }
 
@@ -254,7 +258,7 @@ button {
   background-color: #9ef1e6;
 }
 
-.header_nav_item.color-marrs:hover > a {
+.header_nav_item.color-marrs:hover > a, .header_nav_item.color-marrs.active > a {
   background-color: #009683;
 }
 
@@ -271,6 +275,14 @@ button {
   -webkit-transform: none;
           transform: none;
   visibility: visible;
+}
+
+.header_nav_item.active > a span {
+  color: #ffffff;
+}
+
+.header_nav_item.active > a span svg path {
+  fill: #ffffff;
 }
 
 .header_lang {
@@ -917,14 +929,14 @@ button {
   margin-bottom: 40px;
 }
 
-.explore_route button {
+.explore_route a {
   width: 226px;
   margin: 0 auto 40px;
   padding: 0;
   display: block;
 }
 
-.explore_route button img {
+.explore_route a img {
   width: 100%;
 }
 
@@ -1357,6 +1369,288 @@ button {
   margin: 0;
 }
 
+.route-inner {
+  padding-bottom: 47.71vw;
+}
+
+.route-inner.color-green .route_pin svg path {
+  fill: #abcd03;
+}
+
+.route-inner.color-green .route_feat_title {
+  background-color: #abcd03;
+}
+
+.route-inner.color-green .route_day_title {
+  color: #abcd03;
+}
+
+.route-inner.color-green .route_day_arrow path {
+  fill: #abcd03;
+}
+
+.route-inner.color-green .route_hotel_title svg path {
+  fill: #abcd03;
+}
+
+.route-inner.color-green .route_hotel h4 {
+  color: #abcd03;
+}
+
+.route-inner.color-green .route_place_arrow, .route-inner.color-green .route_place_name {
+  background-color: #abcd03;
+}
+
+.route-inner.color-green .route_place_text h4 {
+  color: #abcd03;
+}
+
+.route-inner.color-green .route_place_info svg path, .route-inner.color-green .route_place_next svg path {
+  fill: #abcd03;
+}
+
+.route-inner .lantern {
+  position: absolute;
+  right: 5.73vw;
+}
+
+.route_feat {
+  padding: 225px 0 110px;
+}
+
+.route_feat .route_link_item {
+  gap: 40px;
+}
+
+.route_feat .route_link_item .route_pin svg {
+  width: 106px;
+  height: 174px;
+}
+
+.route_feat .route_link_item .route_pin_en {
+  font-size: 62px;
+}
+
+.route_feat .route_link_item .route_pin_ch {
+  font-size: 29px;
+}
+
+.route_feat .route_link_item .route_text {
+  padding-top: 19px;
+}
+
+.route_feat .route_link_item:hover {
+  opacity: 1;
+}
+
+.route_feat .route_link_text h5 {
+  font-size: 70px;
+}
+
+.route_feat_text {
+  padding-left: 60px;
+}
+
+.route_feat_text p {
+  font-size: 30px;
+  color: #252525;
+}
+
+.route_feat_title {
+  font-size: 33px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 100px;
+  color: #fff;
+  margin-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.route_day {
+  margin-bottom: 255px;
+}
+
+.route_day_title {
+  margin-bottom: 110px;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.route_day_arrow {
+  width: 16px;
+  height: 96px;
+  margin: 30px auto 35px;
+}
+
+.route_day:last-child {
+  margin-bottom: 0;
+}
+
+.route_hotel {
+  width: 50%;
+  margin-left: auto;
+}
+
+.route_hotel_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.route_hotel_title h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.route_hotel_title svg {
+  width: 83px;
+  height: 62px;
+}
+
+.route_hotel h4 {
+  font-size: 35px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.route_place .row {
+  margin: 0;
+}
+
+.route_place .row > div {
+  padding: 0;
+}
+
+.route_place_pic {
+  padding-right: 60px;
+}
+
+.route_place_pic_inner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 66.67%;
+  margin-bottom: 75px;
+}
+
+.route_place_pic_inner:last-child {
+  margin-bottom: 0;
+}
+
+.route_place_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.route_place_tag {
+  position: absolute;
+  width: 280px;
+  right: 0;
+  bottom: 0;
+}
+
+.route_place_arrow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.route_place_arrow img {
+  width: 46px;
+}
+
+.route_place_text h3 {
+  font-size: 36px;
+  margin-bottom: 33px;
+}
+
+.route_place_text h4 {
+  font-size: 28px;
+  margin-bottom: 44px;
+}
+
+.route_place_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.route_place_info svg {
+  width: 20px;
+  height: 20px;
+}
+
+.route_place_info p {
+  font-size: 20px;
+  width: calc(100% - 20px - 8px);
+}
+
+.route_place_next {
+  display: block;
+  width: 16px;
+  height: 96px;
+  margin: 30px auto;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+
+.route_place_name {
+  position: absolute;
+  width: 100%;
+  padding: 10px 23px;
+  color: #fff;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  font-size: 28px;
+  margin: 0;
+}
+
+.route_place_infoname {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.route_place_infowrap {
+  margin-bottom: 50px;
+}
+
+.route_place_infowrap:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1700px) {
   .route_title img {
     width: 300px;
@@ -1401,6 +1695,83 @@ button {
   }
   .route_link_icon h3 {
     font-size: 40px;
+  }
+  .route_feat_text p {
+    font-size: 24px;
+  }
+  .route_feat_title {
+    font-size: 28px;
+  }
+  .route_day_title {
+    font-size: 46px;
+  }
+  .route_hotel_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 25px;
+    gap: 20px;
+  }
+  .route_hotel_title h3 {
+    font-size: 38px;
+  }
+  .route_hotel_title svg {
+    width: 74px;
+    height: 55px;
+  }
+  .route_hotel h4 {
+    font-size: 28px;
+  }
+  .route_place_arrow {
+    width: 50px;
+    height: 50px;
+  }
+  .route_place_arrow img {
+    width: 36px;
+  }
+  .route_place_text h3 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .route_place_text h4 {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+  .route_place_info {
+    margin-bottom: 15px;
+  }
+  .route_place_info p {
+    font-size: 16px;
+  }
+  .route_place_name {
+    font-size: 24px;
+  }
+  .route_place_infoname {
+    font-size: 22px;
+  }
+  .route-inner .lantern {
+    right: 40px;
+  }
+  .route-inner .lantern img {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .route-inner {
+    padding-bottom: 0;
+  }
+  .route-inner .lantern {
+    padding-top: 24vw;
+    padding-bottom: 27vw;
+    position: static;
+  }
+  .route-inner .lantern img {
+    width: 130px;
+    margin: 0 auto;
   }
 }
 
@@ -1458,6 +1829,124 @@ button {
   }
   .route_item.railway .route_link_item {
     margin-bottom: 16px;
+  }
+  .route_feat {
+    padding: 40px 0 50px;
+  }
+  .route_feat .route_link_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    margin: 0 auto 33px;
+  }
+  .route_feat .route_link_item .route_pin svg {
+    width: 52px;
+    height: 85px;
+  }
+  .route_feat .route_link_item .route_pin_en {
+    font-size: 30px;
+  }
+  .route_feat .route_link_item .route_pin_ch {
+    font-size: 14px;
+  }
+  .route_feat .route_link_item .route_pin_text {
+    padding-top: 10px;
+  }
+  .route_feat .route_link_text h5 {
+    font-size: 40px;
+  }
+  .route_feat_text {
+    padding-left: 0;
+  }
+  .route_feat_text p {
+    font-size: 18px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .route_feat_title {
+    font-size: 23px;
+    margin: 0 auto 17px;
+  }
+  .route_day {
+    margin-bottom: 90px;
+  }
+  .route_day_title {
+    margin-bottom: 35px;
+    font-size: 25px;
+  }
+  .route_day .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .route_hotel_title {
+    margin-bottom: 12px;
+    gap: 7px;
+  }
+  .route_hotel_title h3 {
+    font-size: 23px;
+  }
+  .route_hotel_title svg {
+    width: 33px;
+    height: 25px;
+  }
+  .route_hotel h4 {
+    font-size: 18px;
+  }
+  .route_place_pic {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 24px;
+  }
+  .route_place_tag {
+    width: 50%;
+  }
+  .route_place_arrow {
+    width: 35px;
+    height: 35px;
+  }
+  .route_place_arrow img {
+    width: 27px;
+  }
+  .route_place_text {
+    padding: 0 20px;
+  }
+  .route_place_text h3 {
+    font-size: 23px;
+    margin-bottom: 11px;
+  }
+  .route_place_text h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .route_place_info {
+    margin-bottom: 15px;
+  }
+  .route_place_info svg {
+    width: 14px;
+    height: 14px;
+  }
+  .route_place_info p {
+    font-size: 16px;
+  }
+  .route_place_next {
+    width: 10px;
+    height: 60px;
+    margin: 25px auto;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .route_place_name {
+    display: none;
+  }
+  .route_place_infoname {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .route_place_infowrap {
+    margin-bottom: 35px;
   }
 }
 
@@ -1553,21 +2042,32 @@ button {
   }
 }
 
-.home-lantern {
-  padding: 14vw 0 23vw;
-}
-
-.home-lantern img {
-  margin: 0 auto;
+.lantern img {
   width: 215px;
 }
 
+.lantern-home {
+  padding: 14vw 0 23vw;
+}
+
+.lantern-home img {
+  margin: 0 auto;
+}
+
+.lantern-A {
+  top: 300vw;
+}
+
+.lantern-B {
+  top: 479.79vw;
+}
+
 @media screen and (max-width: 575px) {
-  .home-lantern {
+  .lantern {
     padding-top: 24vw;
     padding-bottom: 27vw;
   }
-  .home-lantern img {
+  .lantern img {
     width: 130px;
   }
 }
