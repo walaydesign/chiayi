@@ -813,6 +813,7 @@ button {
       }
       &_item {
         margin-bottom: 16px;
+        padding: 0 !important;
         &.phone {
           width: 50%;
         }

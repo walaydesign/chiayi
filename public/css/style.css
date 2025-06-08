@@ -864,6 +864,7 @@ button {
   }
   .footer_info_item {
     margin-bottom: 16px;
+    padding: 0 !important;
   }
   .footer_info_item.phone {
     width: 50%;
