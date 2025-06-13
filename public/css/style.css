@@ -46,6 +46,34 @@ button {
   padding-right: 40px;
 }
 
+@media screen and (max-width: 1900px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .header {
   height: 140px;
   background-color: #fff;
@@ -449,11 +477,7 @@ button {
 
 @media screen and (max-width: 1900px) {
   .header {
-    height: 110px;
-  }
-  .header .container {
-    padding-left: 100px;
-    padding-right: 100px;
+    height: 95px;
   }
   .header_nav_item > a {
     font-size: 16px;
@@ -478,10 +502,6 @@ button {
 }
 
 @media screen and (max-width: 1300px) {
-  .header .container {
-    padding-left: 40px;
-    padding-right: 80px;
-  }
   .header_top {
     right: 15px;
   }
@@ -492,7 +512,6 @@ button {
     height: 73px;
   }
   .header .container {
-    padding-left: 26px;
     padding-right: 0;
   }
   .header::after {
@@ -562,7 +581,7 @@ button {
 
 @media screen and (max-width: 575px) {
   .header .container {
-    padding-left: 15px;
+    padding-right: 0;
   }
   .header_logo {
     width: 150px;
@@ -604,7 +623,7 @@ button {
 
 @media screen and (max-width: 1900px) {
   .main {
-    padding-top: 110px;
+    padding-top: 95px;
   }
 }
 
@@ -886,6 +905,157 @@ button {
   }
 }
 
+.banner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 46.09%;
+}
+
+.banner > img {
+  position: absolute;
+}
+
+.banner_title {
+  position: absolute;
+  top: 3.07vw;
+  left: calc((100vw - 1770px) / 2 + 100px);
+}
+
+.banner-home {
+  background-color: #f8f8f8;
+}
+
+.banner-home .banner_title {
+  width: 36.15vw;
+}
+
+.banner-3day {
+  background-color: #abcd03;
+}
+
+.banner-inner .banner_title img {
+  width: 31.09vw;
+  margin-bottom: 48px;
+}
+
+.banner-inner .banner_title h1 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.banner_shape {
+  width: 36.91vw;
+  right: 12.05vw;
+  top: 1.95vw;
+}
+
+.banner_circle {
+  width: 26.41vw;
+  top: 1.25vw;
+  right: 4.11vw;
+}
+
+.banner_mountain {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.banner_graphic {
+  width: 41.77%;
+  right: 0;
+  bottom: 0;
+}
+
+.banner_en {
+  width: 4.06%;
+  right: 2.66vw;
+  bottom: 6.5vw;
+}
+
+@media screen and (max-width: 1970px) {
+  .banner_title {
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .banner-inner .banner_title h1 {
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .banner_title {
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .banner_title {
+    left: 26px;
+  }
+  .banner-inner .banner_title h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner-inner .banner_title img {
+    margin-bottom: 20px;
+  }
+  .banner-inner .banner_title h1 {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    padding-bottom: 105.13%;
+  }
+  .banner-home .banner_title {
+    width: 46.84vw;
+    top: 6.92vw;
+  }
+  .banner-inner .banner_title {
+    top: 5.9vw;
+    width: calc((100vw - 52px) / 2);
+  }
+  .banner-inner .banner_title img {
+    width: 47.82vw;
+    margin-bottom: 8px;
+  }
+  .banner-inner .banner_title h1 {
+    font-size: 12px;
+  }
+  .banner_shape {
+    width: 67.95vw;
+    right: 10.51vw;
+    top: 16.15vw;
+  }
+  .banner_circle {
+    width: 37.51vw;
+    top: 14.36vw;
+    right: 1.14vw;
+  }
+  .banner_graphic {
+    width: 70.18%;
+  }
+  .banner_en {
+    width: 6.78%;
+    right: 26px;
+    bottom: 3.96vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .banner_title {
+    left: 15px;
+  }
+}
+
 .explore {
   padding: 200px 0;
 }
@@ -941,7 +1111,13 @@ button {
   width: 100%;
 }
 
-@media screen and (max-height: 1199px) {
+@media screen and (max-width: 1700px) {
+  .explore_text p {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .explore_title {
     max-width: 600px;
     margin-bottom: 75px;
@@ -1148,7 +1324,8 @@ button {
 .route_item {
   max-width: 1400px;
   width: 100%;
-  margin: 0 auto 350px;
+  padding-top: 140px;
+  margin: 0 auto 210px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1209,12 +1386,20 @@ button {
   fill: #009683;
 }
 
+.route_item.link-right .route_text {
+  padding-right: 65px;
+}
+
 .route_item.link-right .route_link {
   padding-left: 90px;
 }
 
 .route_item.link-left .route_link {
   padding-right: 90px;
+}
+
+.route_item.link-left .route_text {
+  padding-left: 60px;
 }
 
 .route_item.link-left .route_text-wrap {
@@ -1227,6 +1412,10 @@ button {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.route_item:last-child {
+  margin-bottom: 0;
 }
 
 .route_title {
@@ -1358,6 +1547,11 @@ button {
   color: #ffffff;
   font-weight: 700;
   line-height: 1;
+}
+
+.route_pin_text img {
+  width: 40px;
+  margin: 0 auto;
 }
 
 .route_pin_en {
@@ -1522,6 +1716,10 @@ button {
   font-weight: 500;
 }
 
+.route_place {
+  position: relative;
+}
+
 .route_place .row {
   margin: 0;
 }
@@ -1531,7 +1729,7 @@ button {
 }
 
 .route_place_pic {
-  padding-right: 60px;
+  padding-right: 35px;
 }
 
 .route_place_pic_inner {
@@ -1584,6 +1782,10 @@ button {
 
 .route_place_arrow img {
   width: 46px;
+}
+
+.route_place_text {
+  padding-left: 25px;
 }
 
 .route_place_text h3 {
@@ -1652,18 +1854,38 @@ button {
   margin-bottom: 0;
 }
 
+.route_place_lantern {
+  position: absolute;
+  right: 0;
+  width: 215px;
+}
+
+.route_place_lantern.lantern-A {
+  bottom: 0;
+}
+
+.route_place_lantern.lantern-B {
+  top: 0;
+}
+
 @media screen and (max-width: 1700px) {
   .route_title img {
-    width: 300px;
+    width: 260px;
   }
   .route_title h3 {
-    font-size: 40px;
+    font-size: 34px;
   }
   .route_text h4 {
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 50px;
+    max-width: 400px;
+  }
+  .route_pic {
+    max-width: 450px;
+    margin: 0 auto;
   }
   .route_pic p {
-    font-size: 28px;
+    font-size: 26px;
   }
   .route_pin {
     position: relative;
@@ -1674,6 +1896,9 @@ button {
   }
   .route_pin_text {
     padding-top: 8px;
+  }
+  .route_pin_text img {
+    width: 30px;
   }
   .route_pin_en {
     font-size: 32px;
@@ -1686,7 +1911,7 @@ button {
     margin-bottom: 40px;
   }
   .route_link_text h5 {
-    font-size: 40px;
+    font-size: 42px;
   }
   .route_link_text p {
     font-size: 16px;
@@ -1696,6 +1921,12 @@ button {
   }
   .route_link_icon h3 {
     font-size: 40px;
+  }
+  .route_link_pic.day2 {
+    width: 355px;
+  }
+  .route_link_pic.day3 {
+    width: 390px;
   }
   .route_feat_text p {
     font-size: 24px;
@@ -1753,6 +1984,9 @@ button {
   .route_place_infoname {
     font-size: 22px;
   }
+  .route_place_lantern {
+    width: 150px;
+  }
   .route-inner .lantern {
     right: 40px;
   }
@@ -1779,6 +2013,7 @@ button {
 @media screen and (max-width: 991px) {
   .route_text {
     margin-bottom: 30px;
+    padding: 0 !important;
   }
   .route_text-wrap {
     -webkit-box-ordinal-group: 2 !important;
@@ -1823,7 +2058,8 @@ button {
     font-size: 36px;
   }
   .route_item {
-    margin-bottom: 135px;
+    padding-top: 75px;
+    margin-bottom: 60px;
   }
   .route_item.railway .route_link {
     max-width: 500px;
@@ -1999,6 +2235,12 @@ button {
   .route_pin_ch {
     font-size: 8px;
   }
+  .route_pin_text {
+    padding-top: 10px;
+  }
+  .route_pin_text img {
+    width: 16px;
+  }
   .route_link {
     max-width: 400px;
     margin: 0 auto;
@@ -2048,15 +2290,11 @@ button {
 }
 
 .lantern-home {
-  padding: 14vw 0 23vw;
+  padding: 14vw 0 18vw;
 }
 
 .lantern-home img {
   margin: 0 auto;
-}
-
-.lantern-A {
-  top: 300vw;
 }
 
 .lantern-B {

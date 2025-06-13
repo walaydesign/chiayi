@@ -1,3 +1,6 @@
+AOS.init({startEvent: 'load'});
+window.addEventListener('load', AOS.refresh);
+
 $(".header_lang_title").click(function() {
     $(this).parents(".header_lang").find("ul").slideToggle(300);
 })
@@ -17,3 +20,4 @@ $(".header_menu").click(function() {
 $(".header_top").click(function(){
     $("html, body").animate({scrollTop: 0},300);
 })
+

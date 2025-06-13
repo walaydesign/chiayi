@@ -60,6 +60,22 @@ button {
   max-width: 1770px;
   padding-left: 40px;
   padding-right: 40px;
+  @media screen and (max-width: 1900px) {
+  padding-left: 100px;
+  padding-right: 100px;
+  }
+  @media screen and (max-width: 1300px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  @media screen and (max-width: 575px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .header {
@@ -415,11 +431,7 @@ button {
     }
   }
   @media screen and (max-width: 1900px) {
-    height: 110px;
-    .container {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
+    height: 95px;
     &_nav {
       &_item {
         > a {
@@ -450,10 +462,6 @@ button {
     }
   }
   @media screen and (max-width: 1300px) {
-    .container {
-      padding-left: 40px;
-      padding-right: 80px;
-    }
     &_top {
       right: 15px;
     }
@@ -461,7 +469,6 @@ button {
   @media screen and (max-width: 1199px) {
     height: 73px;
     .container {
-      padding-left: 26px;
       padding-right: 0;
     }
     &::after {
@@ -551,7 +558,8 @@ button {
   }
   @media screen and (max-width: 575px) {
     .container {
-      padding-left: 15px;
+      // padding-left: 15px;
+      padding-right: 0;
     }
     &_logo {
       width: 150px;
@@ -583,7 +591,7 @@ button {
   background-position: center bottom;
   background-repeat: no-repeat;
   @media screen and (max-width: 1900px) {
-    padding-top: 110px;
+    padding-top: 95px;
   }
   @media screen and (max-width: 1199px) {
     padding-top: 73px;
@@ -843,6 +851,156 @@ button {
   }
 }
 
+.banner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 46.09%;
+  > img {
+    position: absolute;
+  }
+  &_title {
+    position: absolute;
+    top: 3.07vw;
+    left: calc((100vw - 1770px) / 2 + 100px);
+  }
+  &-home {
+    background-color: #f8f8f8;
+    .banner_title {
+      width: 36.15vw;
+    }
+  }
+  &-3day {
+    background-color: $green;
+  }
+&-inner {
+  .banner_title {
+    img {
+      width: 31.09vw;
+      margin-bottom: 48px;
+    }
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}
+  &_shape {
+    width: 36.91vw;
+    right: 12.05vw;
+    top: 1.95vw;
+  }
+  &_circle {
+    width: 26.41vw;
+    top: 1.25vw;
+    right: 4.11vw;
+  }
+  &_mountain {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  &_graphic {
+    width: 41.77%;
+    right: 0;
+    bottom: 0;
+  }
+  &_en {
+    width: 4.06%;
+    right: 2.66vw;
+    bottom: 6.5vw;
+  }
+  @media screen and (max-width: 1970px) {
+    &_title {
+      left: 100px;
+    }
+  }
+  @media screen and (max-width: 1600px) {
+    &-inner {
+      .banner_title {
+        h1 {
+          font-size: 29px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    &_title {
+      left: 40px;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    &_title {
+      left: 26px;
+    }
+    &-inner {
+      .banner_title {
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    &-inner {
+      .banner_title {
+        img {
+          margin-bottom: 20px;
+        }
+        h1 {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 105.13%;
+    &-home {
+      .banner_title {
+        width: 46.84vw;
+        top: 6.92vw;
+      }
+    }
+    &-inner {
+      .banner_title {
+        top: 5.9vw;
+        width: calc((100vw - 52px) / 2);
+        img {
+          width: 47.82vw;
+          margin-bottom: 8px;
+        }
+        h1 {
+          font-size: 12px;
+        }
+      }
+    }
+    &_shape {
+      width: 67.95vw;
+      right: 10.51vw;
+      top: 16.15vw;
+    }
+    &_circle {
+      width: 37.51vw;
+      top: 14.36vw;
+      right: 1.14vw;
+    }
+    &_graphic {
+      width: 70.18%;
+    }
+    &_en {
+      width: 6.78%;
+      right: 26px;
+      bottom: 3.96vw;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    &_title {
+      left: 15px;
+    }
+  }
+}
+
 .explore {
   padding: 200px 0;
   &_title {
@@ -888,7 +1046,14 @@ button {
       }
     }
   }
-  @media screen and (max-height: 1199px) {
+  @media screen and (max-width: 1700px) {
+&_text {
+      p {
+        font-size: 26px;
+      }
+    }
+  }
+  @media screen and (max-width: 1199px) {
     &_title {
       max-width: 600px;
       margin-bottom: 75px;
@@ -1085,7 +1250,8 @@ button {
   &_item {
     max-width: 1400px;
     width: 100%;
-    margin: 0 auto 350px;
+    padding-top: 140px;
+    margin: 0 auto 210px;
     transition: $transition;
     > .row {
       margin: 0;
@@ -1189,14 +1355,22 @@ button {
     }
     &.link {
       &-right {
-        .route_link {
+        .route {
+          &_text {
+          padding-right: 65px;
+          }
+          &_link {
           padding-left: 90px;
+          }
         }
       }
       &-left {
         .route {
           &_link {
             padding-right: 90px;
+          }
+          &_text {
+            padding-left: 60px;
           }
           &_text-wrap {
             order: 2;
@@ -1206,6 +1380,9 @@ button {
           }
         }
       }
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
   &_title {
@@ -1316,6 +1493,10 @@ button {
         font-weight: 700;
         line-height: 1;
       }
+      img {
+        width: 40px;
+        margin: 0 auto;
+      }
     }
     &_en {
       font-size: 39px;
@@ -1366,7 +1547,8 @@ button {
             }
           }
           &_place {
-            &_arrow, &_name {
+            &_arrow,
+            &_name {
               background-color: $green;
             }
             &_text {
@@ -1481,6 +1663,7 @@ button {
     }
   }
   &_place {
+      position: relative;
     .row {
       margin: 0;
       > div {
@@ -1488,7 +1671,7 @@ button {
       }
     }
     &_pic {
-      padding-right: 60px;
+      padding-right: 35px;
       &_inner {
         position: relative;
         width: 100%;
@@ -1529,6 +1712,7 @@ button {
       }
     }
     &_text {
+      padding-left: 25px;
       h3 {
         font-size: 36px;
         margin-bottom: 33px;
@@ -1581,24 +1765,41 @@ button {
         margin-bottom: 0;
       }
     }
+    &_lantern {
+      position: absolute;
+      right: 0;
+      width: 215px;
+      &.lantern {
+        &-A {
+          bottom: 0;
+        }
+        &-B {
+          top: 0;
+        }
+      }
+    }
   }
   @media screen and (max-width: 1700px) {
     &_title {
       img {
-        width: 300px;
+        width: 260px;
       }
       h3 {
-        font-size: 40px;
+        font-size: 34px;
       }
     }
     &_text {
       h4 {
-        font-size: 28px;
+        font-size: 26px;
+      margin-bottom: 50px;
+      max-width: 400px;
       }
     }
     &_pic {
+      max-width: 450px;
+      margin: 0 auto;
       p {
-        font-size: 28px;
+        font-size: 26px;
       }
     }
     &_pin {
@@ -1609,6 +1810,9 @@ button {
       }
       &_text {
         padding-top: 8px;
+        img {
+          width: 30px;
+        }
       }
       &_en {
         font-size: 32px;
@@ -1624,7 +1828,7 @@ button {
       }
       &_text {
         h5 {
-          font-size: 40px;
+          font-size: 42px;
         }
         p {
           font-size: 16px;
@@ -1636,6 +1840,14 @@ button {
         }
         h3 {
           font-size: 40px;
+        }
+      }
+      &_pic {
+        &.day2 {
+          width: 355px;
+        }
+        &.day3 {
+          width: 390px;
         }
       }
     }
@@ -1696,12 +1908,15 @@ button {
           font-size: 16px;
         }
       }
-    &_name {
-      font-size: 24px;
-    }
-    &_infoname {
-      font-size: 22px;
-    }
+      &_name {
+        font-size: 24px;
+      }
+      &_infoname {
+        font-size: 22px;
+      }
+      &_lantern {
+        width: 150px;
+      }
     }
     &-inner {
       .lantern {
@@ -1729,6 +1944,7 @@ button {
   @media screen and (max-width: 991px) {
     &_text {
       margin-bottom: 30px;
+      padding: 0 !important;
       &-wrap {
         order: 1 !important;
       }
@@ -1769,7 +1985,8 @@ button {
       }
     }
     &_item {
-      margin-bottom: 135px;
+      padding-top: 75px;
+      margin-bottom: 60px;
       &.railway {
         .route_link {
           max-width: 500px;
@@ -1953,6 +2170,12 @@ button {
       &_ch {
         font-size: 8px;
       }
+      &_text {
+        padding-top: 10px;
+        img {
+          width: 16px;
+        }
+      }
     }
     &_link {
       max-width: 400px;
@@ -2012,13 +2235,13 @@ button {
     width: 215px;
   }
   &-home {
-    padding: 14vw 0 23vw;
+    padding: 14vw 0 18vw;
     img {
       margin: 0 auto;
     }
   }
   &-A {
-    top: 300vw;
+    // top: 300vw;
   }
   &-B {
     top: 479.79vw;

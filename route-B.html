@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
@@ -24,7 +25,7 @@
             <ul class="header_nav_first">
               <li class="header_nav_item"><a href="">交通資訊</a></li>
               <li class="header_nav_item has-child color-orange">
-                <a>
+                <a class="header_item" href="./index.html#day1">
                   <span>
                     慢旅一日遊
                     <svg
@@ -50,7 +51,7 @@
                 </ul>
               </li>
               <li class="header_nav_item has-child color-blue">
-                <a>
+                <a class="header_item" href="./index.html#day2">
                   <span>
                     慢旅二日遊
                     <svg
@@ -74,7 +75,7 @@
                 </ul>
               </li>
               <li class="header_nav_item has-child color-green active">
-                <a>
+                <a class="header_item" href="./index.html#day3">
                   <span>
                     慢旅三日遊
                     <svg
@@ -97,7 +98,7 @@
                 </ul>
               </li>
               <li class="header_nav_item has-child color-marrs">
-                <a>
+                <a class="header_item" href="./index.html#railway">
                   <span>
                     鐵道慢旅
                     <svg
@@ -118,8 +119,6 @@
                   <li><a href="">阿里山林鐵</a></li>
                   <li><a href="">公共運輸</a></li>
                   <li><a href="">人文慢旅</a></li>
-                  <li><a href="">森活慢旅</a></li>
-                  <li><a href="">自駕遊</a></li>
                 </ul>
               </li>
             </ul>
@@ -153,16 +152,18 @@
     </header>
 
     <main class="main">
-      <img
-        class="w-100 d-lg-block d-none"
-        src="./public/img/3day-B-banner.png"
-        alt=""
-      />
-      <img
-        class="w-100 d-lg-none"
-        src="./public/img/3day-A-banner-m.png"
-        alt=""
-      />
+      <div class="banner banner-3day banner-inner">
+        <div class="banner_title" data-aos="fade-up" data-aos-duration="1000">
+          <img src="./public/img/3day-title.svg" alt="">
+          <h1>慢遊山海之間，感受嘉義緩慢而深刻的魅力</h1>
+        </div>
+        <img class="banner_shape" src="./public/img/3day-banner-shape.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <img class="banner_circle" src="./public/img/3day-banner-circle.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img class="banner_mountain d-md-block d-none" src="./public/img/3day-banner-train.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img class="banner_mountain d-md-none" src="./public/img/3day-banner-train-m.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img class="banner_graphic" src="./public/img/3day-banner-graphic.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img class="banner_en" src="./public/img/banner-home-en.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+      </div>
 
       <div class="route-inner color-green">
         <div class="route_feat">
@@ -339,6 +340,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="route_place">
                   <div class="row">
                     <div class="col-lg-6">
@@ -464,6 +466,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="route_place">
                   <div class="row">
                     <div class="col-lg-6">
@@ -579,6 +582,7 @@
                     </div>
                   </div>
                 </div>
+
               </div>
               <svg
                 class="route_day_arrow d-lg-block d-none"
@@ -1820,12 +1824,13 @@
                       </div>
                     </div>
                   </div>
+                  <img class="route_place_lantern lantern-B d-xl-block d-none" src="./public/img/lantern.svg" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="lantern lantern-B">
+        <div class="lantern d-xl-none">
           <img src="./public/img/lantern.svg" alt="" />
         </div>
       </div>
@@ -1968,6 +1973,7 @@
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
     <script src="./public/js/common.js"></script>
   </body>
 </html>
