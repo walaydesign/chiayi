@@ -775,11 +775,17 @@ button {
 }
 
 @media screen and (max-width: 1700px) {
+  .footer_top {
+    padding-top: 38px;
+    padding-bottom: 34px;
+  }
   .footer_logo {
     width: 250px;
+    margin-bottom: 34px;
   }
   .footer_line p {
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 26px;
   }
   .footer_line a {
     width: 70px;
@@ -787,28 +793,45 @@ button {
     font-size: 12px;
   }
   .footer_info h3 {
-    font-size: 22px;
+    font-size: 21px;
+    margin-bottom: 17px;
   }
   .footer_info_item {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
+    gap: 8px;
   }
   .footer_info_item span {
-    font-size: 16px;
+    font-size: 15px;
+  }
+  .footer_info_item.phone svg {
+    width: 13px;
+    height: 13px;
+  }
+  .footer_info_item.media img {
+    width: 21px;
+  }
+  .footer_info_item.lantern img {
+    width: 17px;
   }
   .footer_info_item.lantern span {
     font-size: 14px;
   }
   .footer_event_pic {
     width: 180px;
+    margin-bottom: 15px;
   }
   .footer_event_duration {
-    font-size: 20px;
+    font-size: 17px;
+    margin-bottom: 23px;
   }
   .footer_copyright p {
-    font-size: 16px;
+    font-size: 15px;
+  }
+  .footer_bottom {
+    padding: 8px 0;
   }
   .footer_bottom_logo {
-    width: 200px;
+    width: 213px;
   }
 }
 
@@ -1524,6 +1547,13 @@ button {
   font-size: 48px;
 }
 
+.route_link_wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .route_pin {
   position: relative;
 }
@@ -1667,6 +1697,11 @@ button {
   margin-bottom: 255px;
 }
 
+.route_day .container {
+  padding-left: 105px;
+  padding-right: 105px;
+}
+
 .route_day_title {
   margin-bottom: 110px;
   font-size: 55px;
@@ -1729,7 +1764,7 @@ button {
 }
 
 .route_place_pic {
-  padding-right: 35px;
+  padding-right: 30px;
 }
 
 .route_place_pic_inner {
@@ -1785,7 +1820,7 @@ button {
 }
 
 .route_place_text {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 .route_place_text h3 {
@@ -1878,7 +1913,11 @@ button {
   .route_text h4 {
     font-size: 26px;
     margin-bottom: 50px;
-    max-width: 400px;
+    max-width: 420px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 50px;
   }
   .route_pic {
     max-width: 450px;
@@ -1933,6 +1972,9 @@ button {
   }
   .route_feat_title {
     font-size: 28px;
+  }
+  .route_day {
+    margin-bottom: 191px;
   }
   .route_day_title {
     font-size: 46px;

@@ -706,12 +706,18 @@ button {
     }
   }
   @media screen and (max-width: 1700px) {
+    &_top {
+      padding-top: 38px;
+      padding-bottom: 34px;
+    }
     &_logo {
       width: 250px;
+      margin-bottom: 34px;
     }
     &_line {
       p {
-        font-size: 16px;
+        font-size: 15px;
+        margin-bottom: 26px;
       }
       a {
         width: 70px;
@@ -721,14 +727,30 @@ button {
     }
     &_info {
       h3 {
-        font-size: 22px;
+        font-size: 21px;
+        margin-bottom: 17px;
       }
       &_item {
-        margin-bottom: 18px;
+        margin-bottom: 17px;
+        gap: 8px;
         span {
-          font-size: 16px;
+          font-size: 15px;
+        }
+        &.phone {
+          svg {
+            width: 13px;
+            height: 13px;
+          }
+        }
+        &.media {
+          img {
+            width: 21px;
+          }
         }
         &.lantern {
+          img {
+            width: 17px;
+          }
           span {
             font-size: 14px;
           }
@@ -738,19 +760,22 @@ button {
     &_event {
       &_pic {
         width: 180px;
+        margin-bottom: 15px;
       }
       &_duration {
-        font-size: 20px;
+        font-size: 17px;
+        margin-bottom: 23px;
       }
     }
     &_copyright {
       p {
-        font-size: 16px;
+        font-size: 15px;
       }
     }
     &_bottom {
+      padding: 8px 0;
       &_logo {
-        width: 200px;
+        width: 213px;
       }
     }
   }
@@ -1473,6 +1498,10 @@ button {
         font-size: 48px;
       }
     }
+    &_wrapper {
+      width: fit-content;
+      margin: 0 auto;
+    }
   }
   &_pin {
     position: relative;
@@ -1624,6 +1653,10 @@ button {
   }
   &_day {
     margin-bottom: 255px;
+    .container {
+      padding-left: 105px;
+      padding-right: 105px;
+    }
     &_title {
       margin-bottom: 110px;
       font-size: 55px;
@@ -1671,7 +1704,7 @@ button {
       }
     }
     &_pic {
-      padding-right: 35px;
+      padding-right: 30px;
       &_inner {
         position: relative;
         width: 100%;
@@ -1712,7 +1745,7 @@ button {
       }
     }
     &_text {
-      padding-left: 25px;
+      padding-left: 30px;
       h3 {
         font-size: 36px;
         margin-bottom: 33px;
@@ -1791,8 +1824,10 @@ button {
     &_text {
       h4 {
         font-size: 26px;
-      margin-bottom: 50px;
-      max-width: 400px;
+        margin-bottom: 50px;
+        max-width: 420px;
+        width: fit-content;
+        margin: 0 auto 50px;
       }
     }
     &_pic {
@@ -1850,6 +1885,7 @@ button {
           width: 390px;
         }
       }
+
     }
     &_feat {
       &_text {
@@ -1862,6 +1898,7 @@ button {
       }
     }
     &_day {
+      margin-bottom: 191px;
       &_title {
         font-size: 46px;
       }
@@ -2239,9 +2276,6 @@ button {
     img {
       margin: 0 auto;
     }
-  }
-  &-A {
-    // top: 300vw;
   }
   &-B {
     top: 479.79vw;
