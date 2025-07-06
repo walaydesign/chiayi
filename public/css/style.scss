@@ -18,6 +18,7 @@ $marrs-green: #009683;
 $gold: #be8a43;
 $gray: #d9d9d9;
 $navy: #00496d;
+$yellow: #FDD23F;
 $transition: 0.3s;
 $chenyuluoyan: "ChenYuluoyan", "Noto Sans TC";
 
@@ -103,6 +104,11 @@ button {
     &-green {
       &::after {
         background-color: $lemon;
+      }
+    }
+    &-yellow {
+      &::after {
+        background-color: $yellow;
       }
     }
   }
@@ -894,6 +900,9 @@ button {
       width: 36.15vw;
     }
   }
+  &-1day {
+    background-color: $orange;
+  }
   &-3day {
     background-color: $green;
   }
@@ -1596,6 +1605,74 @@ button {
           }
         }
       }
+      &-yellow {
+        .route {
+          &_pin {
+            svg {
+              path {
+                fill: $orange;
+              }
+            }
+          }
+          &_feat {
+            &_title {
+              background-color: $orange;
+            }
+          }
+          &_day {
+            &_title {
+              color: $orange;
+            }
+            &_arrow {
+              path {
+                fill: $orange;
+              }
+            }
+          }
+          &_hotel {
+            &_title {
+              svg {
+                path {
+                  fill: $orange;
+                }
+              }
+            }
+            h4 {
+              color: $orange;
+            }
+          }
+          &_place {
+            &_arrow,
+            &_name {
+              background-color: $orange;
+            }
+            &_text {
+              h4 {
+                color: $orange;
+              }
+            }
+            &_info {
+              svg {
+                path {
+                  fill: $orange;
+                }
+              }
+            }
+            &_next {
+              path {
+                fill: $orange;
+              }
+            }
+          }
+          &_link {
+            &_text {
+              p {
+                color: #F6AB00;
+              }
+            }
+          }
+        }
+      }
     }
     .lantern {
       position: absolute;
@@ -1757,12 +1834,13 @@ button {
     }
     &_info {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 8px;
       margin-bottom: 20px;
       svg {
         width: 20px;
         height: 20px;
+        margin-top: 5px;
       }
       p {
         font-size: 20px;
