@@ -105,6 +105,10 @@ button {
   background-color: #FDD23F;
 }
 
+.header.border-blue::after {
+  background-color: #82d0f5;
+}
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -960,6 +964,10 @@ button {
   background-color: #f6ab00;
 }
 
+.banner-2day {
+  background-color: #0ca7f1;
+}
+
 .banner-3day {
   background-color: #abcd03;
 }
@@ -1684,6 +1692,46 @@ button {
 
 .route-inner.color-yellow .route_link_text p {
   color: #F6AB00;
+}
+
+.route-inner.color-blue .route_pin svg path {
+  fill: #0ca7f1;
+}
+
+.route-inner.color-blue .route_feat_title {
+  background-color: #0ca7f1;
+}
+
+.route-inner.color-blue .route_day_title {
+  color: #0ca7f1;
+}
+
+.route-inner.color-blue .route_day_arrow path {
+  fill: #0ca7f1;
+}
+
+.route-inner.color-blue .route_hotel_title svg path {
+  fill: #0ca7f1;
+}
+
+.route-inner.color-blue .route_hotel h4 {
+  color: #0ca7f1;
+}
+
+.route-inner.color-blue .route_place_arrow, .route-inner.color-blue .route_place_name {
+  background-color: #0ca7f1;
+}
+
+.route-inner.color-blue .route_place_text h4 {
+  color: #0ca7f1;
+}
+
+.route-inner.color-blue .route_place_info svg path {
+  fill: #0ca7f1;
+}
+
+.route-inner.color-blue .route_place_next path {
+  fill: #0ca7f1;
 }
 
 .route-inner .lantern {

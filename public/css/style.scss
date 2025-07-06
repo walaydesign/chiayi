@@ -111,6 +111,11 @@ button {
         background-color: $yellow;
       }
     }
+    &-blue {
+      &::after {
+        background-color: $sky-blue;
+      }
+    }
   }
   .container {
     display: flex;
@@ -903,6 +908,9 @@ button {
   &-1day {
     background-color: $orange;
   }
+  &-2day {
+    background-color: $blue;
+  }
   &-3day {
     background-color: $green;
   }
@@ -1668,6 +1676,67 @@ button {
             &_text {
               p {
                 color: #F6AB00;
+              }
+            }
+          }
+        }
+      }
+      &-blue {
+        .route {
+          &_pin {
+            svg {
+              path {
+                fill: $blue;
+              }
+            }
+          }
+          &_feat {
+            &_title {
+              background-color: $blue;
+            }
+          }
+          &_day {
+            &_title {
+              color: $blue;
+            }
+            &_arrow {
+              path {
+                fill: $blue;
+              }
+            }
+          }
+          &_hotel {
+            &_title {
+              svg {
+                path {
+                  fill: $blue;
+                }
+              }
+            }
+            h4 {
+              color: $blue;
+            }
+          }
+          &_place {
+            &_arrow,
+            &_name {
+              background-color: $blue;
+            }
+            &_text {
+              h4 {
+                color: $blue;
+              }
+            }
+            &_info {
+              svg {
+                path {
+                  fill: $blue;
+                }
+              }
+            }
+            &_next {
+              path {
+                fill: $blue;
               }
             }
           }
