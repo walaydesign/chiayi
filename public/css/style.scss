@@ -333,6 +333,13 @@ button {
           }
         }
       }
+      &:not(.has-child) {
+        &.active, &:hover {
+          a {
+            color: $gray;
+          }
+        }
+      }
     }
   }
   &_lang {
@@ -927,6 +934,20 @@ button {
       }
     }
   }
+  &-traffic {
+    background-color: $lemon;
+    &.banner-inner {
+      .banner_title {
+        img {
+          width: 15vw;
+          margin-bottom: 65px;
+        }
+        h1 {
+          color: $not-just-black;
+        }
+      }
+    }
+  }
 &-inner {
   .banner_title {
     img {
@@ -1059,6 +1080,16 @@ button {
         .banner_title {
           img {
             width: 23vw;
+            margin-bottom: 14px;
+          }
+        }
+      }
+    }
+    &-traffic {
+      &.banner-inner {
+        .banner_title {
+          img {
+            width: 22vw;
             margin-bottom: 14px;
           }
         }
@@ -2541,6 +2572,7 @@ button {
   }
   &-home {
     padding: 14vw 0 18vw;
+    // position: static !important;
     img {
       margin: 0 auto;
     }
@@ -2778,4 +2810,189 @@ button {
 
 .mb-41 {
   margin-bottom: 41px;
+}
+
+.traffic {
+  &-way {
+    margin-top: 225px;
+    margin-bottom: 250px;
+    &_item {
+      margin-bottom: 145px;
+      display: flex;
+      align-items: flex-start;
+      gap: 105px;
+    }
+    &_transform {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      width: 300px;
+      >img {
+        width: 176px;
+      }
+    }
+    &_arrow {
+      width: 92px;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #76A035;
+      img {
+        width: 76%;
+      }
+    }
+    &_text {
+      font-size: 30px;
+      margin: 0;
+      color: $not-just-black;
+      width: calc(100% - 300px - 105px);
+    }
+  }
+  &-info {
+    &_item {
+      margin-bottom: 145px;
+      h2 {
+        font-size: 40px;
+        margin-bottom: 16px;
+        color: $green;
+        font-weight: 700;
+      }
+      ul {
+        li {
+          margin-bottom: 20px;
+          display: flex;
+          gap: 11px;
+          svg {
+            width: 30px;
+            height: 30px;
+            margin-top: 7px;
+            path {
+              fill: $green
+            }
+          }
+          p {
+            font-size: 31px;
+            color: $not-just-black;
+            margin: 0;
+            width: calc(100% - 30px - 11px);
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1700px) {
+    &-way {
+      margin-top: 169px;
+      margin-bottom: 188px;
+      &_item {
+        margin-bottom: 109px;
+        gap: 79px;
+      }
+      &_transform {
+        gap: 24px;
+        width: 225px;
+        >img {
+          width: 132px;
+        }
+      }
+      &_arrow {
+        width: 69px;
+        height: 69px;
+      }
+      &_text {
+        font-size: 23px;
+        width: calc(100% - 225px - 79px);
+      }
+    }
+    &-info {
+      &_item {
+        margin-bottom: 109px;
+        h2 {
+          font-size: 30px;
+          margin-bottom: 12px;
+        }
+        ul {
+          li {
+            margin-bottom: 15px;
+            gap: 8px;
+            svg {
+              width: 23px;
+              height: 23px;
+              margin-top: 5px;
+            }
+            p {
+              font-size: 23px;
+              width: calc(100% - 23px - 8px);
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  @media screen and (max-width: 991px) {
+    &-way {
+      &_item {
+        display: block;
+      }
+      &_transform {
+        margin-bottom: 26px;
+        width: 100%;
+      }
+      &_text {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-way {
+      margin-top: 41px;
+      margin-bottom: 104px;
+      &_item {
+        margin-bottom: 60px;
+      }
+      &_transform {
+        gap: 14px;
+        >img {
+          width: 76px;
+        }
+      }
+      &_arrow {
+        width: 40px;
+        height: 40px;
+      }
+      &_text {
+        font-size: 18px;
+      }
+    }
+    &-info {
+      &_item {
+        margin-bottom: 65px;
+        h2 {
+          font-size: 23px;
+          margin-bottom: 8px;
+        }
+        ul {
+          li {
+            margin-bottom: 16px;
+            gap: 6px;
+            svg {
+              width: 17px;
+              height: 17px;
+              margin-top: 5px;
+            }
+            p {
+              font-size: 18px;
+              width: calc(100% - 17px - 6px);
+            }
+          }
+        }
+      }
+    }
+  }
 }

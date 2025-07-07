@@ -321,6 +321,10 @@ button {
   fill: #ffffff;
 }
 
+.header_nav_item:not(.has-child).active a, .header_nav_item:not(.has-child):hover a {
+  color: #d9d9d9;
+}
+
 .header_lang {
   margin-left: 20px;
   margin-right: 55px;
@@ -981,6 +985,19 @@ button {
   margin-bottom: 40px;
 }
 
+.banner-traffic {
+  background-color: #e6e400;
+}
+
+.banner-traffic.banner-inner .banner_title img {
+  width: 15vw;
+  margin-bottom: 65px;
+}
+
+.banner-traffic.banner-inner .banner_title h1 {
+  color: #4b4b4b;
+}
+
 .banner-inner .banner_title img {
   width: 31.09vw;
   margin-bottom: 48px;
@@ -1105,6 +1122,10 @@ button {
   }
   .banner-railway.banner-inner .banner_title img {
     width: 23vw;
+    margin-bottom: 14px;
+  }
+  .banner-traffic.banner-inner .banner_title img {
+    width: 22vw;
     margin-bottom: 14px;
   }
 }
@@ -2781,5 +2802,205 @@ button {
 
 .mb-41 {
   margin-bottom: 41px;
+}
+
+.traffic-way {
+  margin-top: 225px;
+  margin-bottom: 250px;
+}
+
+.traffic-way_item {
+  margin-bottom: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 105px;
+}
+
+.traffic-way_transform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  width: 300px;
+}
+
+.traffic-way_transform > img {
+  width: 176px;
+}
+
+.traffic-way_arrow {
+  width: 92px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #76A035;
+}
+
+.traffic-way_arrow img {
+  width: 76%;
+}
+
+.traffic-way_text {
+  font-size: 30px;
+  margin: 0;
+  color: #4b4b4b;
+  width: calc(100% - 300px - 105px);
+}
+
+.traffic-info_item {
+  margin-bottom: 145px;
+}
+
+.traffic-info_item h2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  color: #abcd03;
+  font-weight: 700;
+}
+
+.traffic-info_item ul li {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 11px;
+}
+
+.traffic-info_item ul li svg {
+  width: 30px;
+  height: 30px;
+  margin-top: 7px;
+}
+
+.traffic-info_item ul li svg path {
+  fill: #abcd03;
+}
+
+.traffic-info_item ul li p {
+  font-size: 31px;
+  color: #4b4b4b;
+  margin: 0;
+  width: calc(100% - 30px - 11px);
+}
+
+.traffic-info_item ul li:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1700px) {
+  .traffic-way {
+    margin-top: 169px;
+    margin-bottom: 188px;
+  }
+  .traffic-way_item {
+    margin-bottom: 109px;
+    gap: 79px;
+  }
+  .traffic-way_transform {
+    gap: 24px;
+    width: 225px;
+  }
+  .traffic-way_transform > img {
+    width: 132px;
+  }
+  .traffic-way_arrow {
+    width: 69px;
+    height: 69px;
+  }
+  .traffic-way_text {
+    font-size: 23px;
+    width: calc(100% - 225px - 79px);
+  }
+  .traffic-info_item {
+    margin-bottom: 109px;
+  }
+  .traffic-info_item h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .traffic-info_item ul li {
+    margin-bottom: 15px;
+    gap: 8px;
+  }
+  .traffic-info_item ul li svg {
+    width: 23px;
+    height: 23px;
+    margin-top: 5px;
+  }
+  .traffic-info_item ul li p {
+    font-size: 23px;
+    width: calc(100% - 23px - 8px);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .traffic-way_item {
+    display: block;
+  }
+  .traffic-way_transform {
+    margin-bottom: 26px;
+    width: 100%;
+  }
+  .traffic-way_text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .traffic-way {
+    margin-top: 41px;
+    margin-bottom: 104px;
+  }
+  .traffic-way_item {
+    margin-bottom: 60px;
+  }
+  .traffic-way_transform {
+    gap: 14px;
+  }
+  .traffic-way_transform > img {
+    width: 76px;
+  }
+  .traffic-way_arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .traffic-way_text {
+    font-size: 18px;
+  }
+  .traffic-info_item {
+    margin-bottom: 65px;
+  }
+  .traffic-info_item h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+  }
+  .traffic-info_item ul li {
+    margin-bottom: 16px;
+    gap: 6px;
+  }
+  .traffic-info_item ul li svg {
+    width: 17px;
+    height: 17px;
+    margin-top: 5px;
+  }
+  .traffic-info_item ul li p {
+    font-size: 18px;
+    width: calc(100% - 17px - 6px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

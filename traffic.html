@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header border-yellow">
+      <div class="container">
+        <a href="./" class="header_logo"
+          ><img src="./public/img/logo.svg" alt=""
+        /></a>
+        <div class="header_main">
+          <nav class="header_nav">
+            <ul class="header_nav_first">
+              <li class="header_nav_item active"><a href="./traffic.html">交通資訊</a></li>
+              <li class="header_nav_item has-child color-orange">
+                <a class="header_item">
+                  <span>
+                    慢旅一日遊
+                    <svg
+                      width="23"
+                      height="9"
+                      viewBox="0 0 23 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.696 -0.000107765L0 1.51189L11.184 8.63989L22.368 1.51189L21.672 -0.000107765L11.184 6.71989L0.696 -0.000107765Z"
+                        fill="#4B4B4B"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="./day1-routeA.html">雲端慢旅</a></li>
+                  <li><a href="./day1-routeB.html">原味慢旅</a></li>
+                  <li><a href="./day1-routeC.html">人文慢旅</a></li>
+                  <li><a href="./day1-routeD.html">森活慢旅</a></li>
+                  <li><a href="./day1-routeE.html">茶道慢旅</a></li>
+                </ul>
+              </li>
+              <li class="header_nav_item has-child color-blue">
+                <a class="header_item">
+                  <span>
+                    慢旅二日遊
+                    <svg
+                      width="23"
+                      height="9"
+                      viewBox="0 0 23 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.696 -0.000107765L0 1.51189L11.184 8.63989L22.368 1.51189L21.672 -0.000107765L11.184 6.71989L0.696 -0.000107765Z"
+                        fill="#4B4B4B"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="./day2-routeA.html">森山慢遊</a></li>
+                  <li><a href="./day2-routeB.html">茶香慢遊</a></li>
+                  <li><a href="./day2-routeC.html">文創慢旅</a></li>
+                </ul>
+              </li>
+              <li class="header_nav_item has-child color-green">
+                <a class="header_item">
+                  <span>
+                    慢旅三日遊
+                    <svg
+                      width="23"
+                      height="9"
+                      viewBox="0 0 23 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.696 -0.000107765L0 1.51189L11.184 8.63989L22.368 1.51189L21.672 -0.000107765L11.184 6.71989L0.696 -0.000107765Z"
+                        fill="#4B4B4B"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="./day3-routeA.html">走！去阿里山</a></li>
+                  <li><a href="./day3-routeB.html">鄒！去部落</a></li>
+                </ul>
+              </li>
+              <li class="header_nav_item has-child color-marrs">
+                <a class="header_item">
+                  <span>
+                    鐵道慢旅
+                    <svg
+                      width="23"
+                      height="9"
+                      viewBox="0 0 23 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.696 -0.000107765L0 1.51189L11.184 8.63989L22.368 1.51189L21.672 -0.000107765L11.184 6.71989L0.696 -0.000107765Z"
+                        fill="#4B4B4B"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="./railway.html">阿里山林鐵</a></li>
+                  <li><a href="">公共運輸</a></li>
+                  <li><a href="">人文慢旅</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="header_lang">
+              <div class="header_lang_title">Language▼</div>
+              <ul>
+                <li><a href="" class="active">中文</a></li>
+                <li><a href="">English</a></li>
+                <li><a href="">日本語</a></li>
+                <li><a href="">한국어</a></li>
+                <li><a href="">ภาษาไทย</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header_search">
+            <input type="text" placeholder="請輸入關鍵字" />
+            <button><img src="./public/img/search.svg" alt="" /></button>
+          </div>
+          <button class="header_menu d-xl-none">
+            <div class="header_menu_inner">
+              <div class="bar bar-top"></div>
+              <div class="bar bar-middle"></div>
+              <div class="bar bar-bottom"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <button class="header_top d-xl-block d-none">
+        <img src="./public/img/arrow-up.svg" alt="" />
+      </button>
+    </header>
+
+    <main class="main">
+      <div class="banner banner-traffic banner-inner">
+        <div class="banner_title traffic-title" data-aos="fade-up" data-aos-duration="1000">
+          <img src="./public/img/traffic-title.svg" alt="">
+          <h1>部分阿里山區偏遠部落無公車抵逹，可事先<br class="d-md-block d-none">預約民宿業者接送。</h1>
+        </div>
+        <img class="banner_mountain d-md-block d-none" src="./public/img/traffic-banner.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img class="banner_mountain d-md-none" src="./public/img/traffic-banner-m.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img class="banner_graphic" src="./public/img/traffic-banner-graphic.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img class="banner_en" src="./public/img/banner-home-en.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+      </div>
+
+      <div class="traffic-way">
+        <div class="container">
+          <div class="traffic-way_item">
+            <div class="traffic-way_transform">
+              <img src="./public/img/traffic-highspeed.svg" alt="">
+              <div class="traffic-way_arrow">
+                <img src="./public/img/arrow-long.svg" alt="" />
+              </div>
+            </div>
+            <p class="traffic-way_text">
+              由高鐵嘉義站可轉乘 BRT 接駁車至朴子市、嘉義火車站，再轉乘嘉義縣公車、嘉義客運，可逹各景點。
+            </p>
+          </div>
+          <div class="traffic-way_item">
+            <div class="traffic-way_transform">
+              <img src="./public/img/traffic-train.svg" alt="">
+              <div class="traffic-way_arrow">
+                <img src="./public/img/arrow-long.svg" alt="" />
+              </div>
+            </div>
+            <p class="traffic-way_text">
+              搭乘臺鐵西部幹線各級列車至大林、民雄、嘉北、嘉義、水上丶南靖站，再轉乘嘉義縣公車丶嘉義客運，可逹各景點。
+            </p>
+          </div>
+          <div class="traffic-way_item">
+            <div class="traffic-way_transform">
+              <img src="./public/img/traffic-car.svg" alt="">
+              <div class="traffic-way_arrow">
+                <img src="./public/img/arrow-long.svg" alt="" />
+              </div>
+            </div>
+            <p class="traffic-way_text">
+              行駛國道 1 號高速公路下大林丶民雄、嘉義、水上、嘉義系統交流道，或行駛國道 3 號高速公路下梅山丶竹崎丶中埔丶水上系統等交流道，或轉接 82 東西向快速道路，再接平面道路可逹各景點。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="traffic-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="traffic-info_item">
+                <h2>台灣高鐵嘉義站</h2>
+                <ul>
+                  <li>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7596_4628)">
+                      <path d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z" fill="#4B4B4B"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>4066-3000</p>
+                  </li>
+                  <li>
+                    <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7557_7364)">
+                      <path d="M7.92578 0.632568C10.1103 0.632665 12.0965 1.51917 13.5303 2.95288C14.9641 4.38674 15.8506 6.36846 15.8506 8.55835C15.8504 11.3686 13.8071 15.2059 11.8154 18.9441C10.4024 21.6032 9.0156 24.2052 8.46289 26.2595C8.3847 26.5566 8.07675 26.7341 7.77441 26.656C7.57119 26.6039 7.42495 26.4422 7.37793 26.2546L7.38281 26.2595C6.83011 24.2052 5.4485 21.6029 4.03027 18.949C2.04389 15.2109 0.000228389 11.3686 0 8.55835C0 6.36847 0.886446 4.38674 2.32031 2.95288C3.75419 1.51903 5.74108 0.632568 7.92578 0.632568ZM7.92578 3.72437C5.27073 3.72437 3.11816 5.87697 3.11816 8.53198C3.11826 11.1869 5.27079 13.3396 7.92578 13.3396C10.5806 13.3393 12.7323 11.1868 12.7324 8.53198C12.7324 5.87713 10.5806 3.72462 7.92578 3.72437Z" fill="#ABCD03"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7557_7364">
+                      <rect width="15.8561" height="26.0492" fill="white" transform="translate(0 0.632568)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>嘉義縣太保市高鐵西路168號</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="traffic-info_item">
+                <h2>臺鐵嘉義火車站</h2>
+                <ul>
+                  <li>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7596_4628)">
+                      <path d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z" fill="#4B4B4B"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>05-2228904</p>
+                  </li>
+                  <li>
+                    <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7557_7364)">
+                      <path d="M7.92578 0.632568C10.1103 0.632665 12.0965 1.51917 13.5303 2.95288C14.9641 4.38674 15.8506 6.36846 15.8506 8.55835C15.8504 11.3686 13.8071 15.2059 11.8154 18.9441C10.4024 21.6032 9.0156 24.2052 8.46289 26.2595C8.3847 26.5566 8.07675 26.7341 7.77441 26.656C7.57119 26.6039 7.42495 26.4422 7.37793 26.2546L7.38281 26.2595C6.83011 24.2052 5.4485 21.6029 4.03027 18.949C2.04389 15.2109 0.000228389 11.3686 0 8.55835C0 6.36847 0.886446 4.38674 2.32031 2.95288C3.75419 1.51903 5.74108 0.632568 7.92578 0.632568ZM7.92578 3.72437C5.27073 3.72437 3.11816 5.87697 3.11816 8.53198C3.11826 11.1869 5.27079 13.3396 7.92578 13.3396C10.5806 13.3393 12.7323 11.1868 12.7324 8.53198C12.7324 5.87713 10.5806 3.72462 7.92578 3.72437Z" fill="#ABCD03"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7557_7364">
+                      <rect width="15.8561" height="26.0492" fill="white" transform="translate(0 0.632568)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>嘉義市中山路528號</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="traffic-info_item">
+                <h2>嘉義客運（中山站）</h2>
+                <ul>
+                  <li>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7596_4628)">
+                      <path d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z" fill="#4B4B4B"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>05-2223194</p>
+                  </li>
+                  <li>
+                    <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7557_7364)">
+                      <path d="M7.92578 0.632568C10.1103 0.632665 12.0965 1.51917 13.5303 2.95288C14.9641 4.38674 15.8506 6.36846 15.8506 8.55835C15.8504 11.3686 13.8071 15.2059 11.8154 18.9441C10.4024 21.6032 9.0156 24.2052 8.46289 26.2595C8.3847 26.5566 8.07675 26.7341 7.77441 26.656C7.57119 26.6039 7.42495 26.4422 7.37793 26.2546L7.38281 26.2595C6.83011 24.2052 5.4485 21.6029 4.03027 18.949C2.04389 15.2109 0.000228389 11.3686 0 8.55835C0 6.36847 0.886446 4.38674 2.32031 2.95288C3.75419 1.51903 5.74108 0.632568 7.92578 0.632568ZM7.92578 3.72437C5.27073 3.72437 3.11816 5.87697 3.11816 8.53198C3.11826 11.1869 5.27079 13.3396 7.92578 13.3396C10.5806 13.3393 12.7323 11.1868 12.7324 8.53198C12.7324 5.87713 10.5806 3.72462 7.92578 3.72437Z" fill="#ABCD03"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7557_7364">
+                      <rect width="15.8561" height="26.0492" fill="white" transform="translate(0 0.632568)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>嘉義市中山路528號</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="traffic-info_item">
+                <h2>阿里山林業鐵路網路訂票系統</h2>
+                <ul>
+                  <li>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7596_4628)">
+                      <path d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z" fill="#4B4B4B"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>05-2768094 （北門站）</p>
+                  </li>
+                  <li>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7596_4628)">
+                      <path d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z" fill="#4B4B4B"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>05-2679200 （阿里山站）</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="traffic-info_item">
+                <h2>嘉義縣公共汽車管理處</h2>
+                <ul>
+                  <li>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7596_4628)">
+                      <path d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z" fill="#4B4B4B"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>05-2788177</p>
+                  </li>
+                  <li>
+                    <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7557_7364)">
+                      <path d="M7.92578 0.632568C10.1103 0.632665 12.0965 1.51917 13.5303 2.95288C14.9641 4.38674 15.8506 6.36846 15.8506 8.55835C15.8504 11.3686 13.8071 15.2059 11.8154 18.9441C10.4024 21.6032 9.0156 24.2052 8.46289 26.2595C8.3847 26.5566 8.07675 26.7341 7.77441 26.656C7.57119 26.6039 7.42495 26.4422 7.37793 26.2546L7.38281 26.2595C6.83011 24.2052 5.4485 21.6029 4.03027 18.949C2.04389 15.2109 0.000228389 11.3686 0 8.55835C0 6.36847 0.886446 4.38674 2.32031 2.95288C3.75419 1.51903 5.74108 0.632568 7.92578 0.632568ZM7.92578 3.72437C5.27073 3.72437 3.11816 5.87697 3.11816 8.53198C3.11826 11.1869 5.27079 13.3396 7.92578 13.3396C10.5806 13.3393 12.7323 11.1868 12.7324 8.53198C12.7324 5.87713 10.5806 3.72462 7.92578 3.72437Z" fill="#ABCD03"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7557_7364">
+                      <rect width="15.8561" height="26.0492" fill="white" transform="translate(0 0.632568)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>嘉義市大雅路二段635號</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="traffic-info_item">
+                <h2>台灣好行</h2>
+                <ul>
+                  <li>
+                    <p>瑞里線（假日行駛）、故宮南院線<br>
+                      阿里山線－A線、B線、西濱快線</p>
+                  </li>
+                  <li>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7596_4628)">
+                      <path d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z" fill="#4B4B4B"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <p>05-2788177</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="lantern lantern-home">
+        <img src="./public/img/lantern.svg" alt="" />
+      </div>
+
+      
+    </main>
+
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="container">
+          <div>
+            <img class="footer_logo" src="./public/img/logo.svg" alt="" />
+            <div class="footer_line">
+              <p>加入「慢遊嘉義」LINE官方帳號，獲取即時旅遊資訊！</p>
+              <a href=""> LINE<br />官方帳號 </a>
+            </div>
+          </div>
+          <div class="footer_info">
+            <h3>諮詢服務專線</h3>
+            <div class="d-xl-block d-flex flex-wrap gap-sm-4">
+              <div class="footer_info_item phone">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_7596_4628)">
+                    <path
+                      d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z"
+                      fill="#4B4B4B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>(05)362-8123</span>
+              </div>
+              <div class="footer_info_item phone icon-white">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_7596_4628)">
+                    <path
+                      d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z"
+                      fill="#4B4B4B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>分機322 周小姐</span>
+              </div>
+              <div class="footer_info_item phone icon-white">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_7596_4628)">
+                    <path
+                      d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z"
+                      fill="#4B4B4B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>分機324 劉小姐</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer_info">
+            <h3>探索嘉義</h3>
+            <div class="d-xl-block d-flex gap-5">
+              <a href="" class="footer_info_item media">
+                <img src="./public/img/fb.svg" alt="" />
+                <span>Facebook</span>
+              </a>
+              <a href="" class="footer_info_item media">
+                <img src="./public/img/ig.svg" alt="" />
+                <span>Instagram</span>
+              </a>
+              <a href="" class="footer_info_item media">
+                <img src="./public/img/yt.svg" alt="" />
+                <span>YouTube</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_event">
+            <div class="d-xl-block d-flex align-items-center gap-3 mb-4">
+              <img
+                class="footer_event_pic"
+                src="./public/img/2026-lantern.svg"
+                alt=""
+              />
+              <h4 class="footer_event_duration">展期3/3—3/15</h4>
+            </div>
+            <div>
+              <div class="footer_info_item lantern">
+                <img src="./public/img/address.svg" alt="" />
+                <span>612嘉義縣太保市太子大道158號</span>
+              </div>
+              <div class="footer_info_item lantern">
+                <img src="./public/img/clock.svg" alt="" />
+                <span>週一～週四 14:00-22:00 / 週五～週日 10:00-22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="footer_copyright">
+            <p class="footer_copyright_name">
+              <strong>嘉義縣文化觀光局</strong>
+            </p>
+            <p class="footer_copyright_content">
+              2024 © Copyright Culture& Tourism Bureau of Chiayi County
+            </p>
+          </div>
+          <img class="footer_bottom_logo" src="./public/img/logo2.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/common.js"></script>
+  </body>
+</html>
