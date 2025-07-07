@@ -19,6 +19,8 @@ $gold: #be8a43;
 $gray: #d9d9d9;
 $navy: #00496d;
 $yellow: #FDD23F;
+$red: #D06C15;
+$gray-2: #B4B4B4;
 $transition: 0.3s;
 $chenyuluoyan: "ChenYuluoyan", "Noto Sans TC";
 
@@ -914,6 +916,17 @@ button {
   &-3day {
     background-color: $green;
   }
+  &-railway {
+    background-color: $marrs-green;
+    &.banner-inner {
+      .banner_title {
+        img {
+          width: 24vw;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
 &-inner {
   .banner_title {
     img {
@@ -952,6 +965,12 @@ button {
     width: 4.06%;
     right: 2.66vw;
     bottom: 6.5vw;
+  }
+  &_train {
+    position: absolute;
+    width: 25.9vw;
+    top: 6.15vw;
+    right: 6.41vw;
   }
   @media screen and (max-width: 1970px) {
     &_title {
@@ -1034,6 +1053,16 @@ button {
       width: 6.78%;
       right: 26px;
       bottom: 3.96vw;
+    }
+    &-railway {
+      &.banner-inner {
+        .banner_title {
+          img {
+            width: 23vw;
+            margin-bottom: 14px;
+          }
+        }
+      }
     }
   }
   @media screen and (max-width: 575px) {
@@ -1742,6 +1771,17 @@ button {
           }
         }
       }
+      &-red {
+        .route {
+          &_place {
+            &_next {
+              path {
+                fill: $red;
+              }
+            }
+          }
+        }
+      }
     }
     .lantern {
       position: absolute;
@@ -1815,6 +1855,16 @@ button {
     }
     &:last-child {
       margin-bottom: 0;
+    }
+    &.mainroute {
+      .railway_intro {
+        color: $red;
+      }
+    }
+    &.branch {
+      .railway_intro {
+        color: $marrs-green;
+      }
     }
   }
   &_hotel {
@@ -1955,6 +2005,42 @@ button {
         }
         &-B {
           top: 0;
+        }
+      }
+    }
+    &.railway {
+      .route_place {
+        &_pic {
+          &_inner {
+            padding-bottom: 71.67%;
+          }
+        }
+        &_text {
+          padding-right: 70px;
+          height: 63%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h3 {
+            margin: 0;
+          }
+          .railway {
+            &_height {
+              color: $gray-2;
+              font-size: 25px;
+              margin: 0;
+            }
+            &_intro {
+              font-size: 29px;
+              font-weight: 500;
+              margin: 18px 0 0;
+              text-align: justify;
+            }
+          }
+          &-wrap {
+            display: flex;
+            align-items: flex-end;
+          }
         }
       }
     }
@@ -2100,6 +2186,22 @@ button {
       }
       &_lantern {
         width: 150px;
+      }
+      &.railway {
+        .route_place {
+          &_text {
+            padding-right: 53px;
+            .railway {
+              &_height {
+                font-size: 19px;
+              }
+              &_intro {
+                font-size: 22px;
+                margin-top: 14px;
+              }
+            }
+          }
+        }
       }
     }
     &-inner {
@@ -2305,6 +2407,25 @@ button {
       &_infowrap {
         margin-bottom: 35px;
       }
+      &.railway {
+        .route_place {
+          &_text {
+            padding: 0 20px;
+            height: auto;
+            width: 100%;
+            .railway {
+              &_height {
+                font-size: 16px;
+              }
+              &_intro {
+                font-size: 18px;
+                margin-top: 11px;
+              }
+            }
+          }
+        }
+      }
+      
     }
   }
   @media screen and (max-width: 767px) {
@@ -2434,4 +2555,227 @@ button {
       width: 130px;
     }
   }
+}
+
+.railway {
+  &_route {
+    margin-bottom: 250px;
+    margin-top: 225px;
+    img {
+      max-width: 1300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &_title {
+    width: 150px;
+    margin: 0 auto 43px;
+    display: block;
+  }
+  &_name {
+    text-align: center;
+    font-size: 41px;
+    color: $not-just-black;
+    font-weight: 700;
+    margin-bottom: 43px;
+  }
+  &_next {
+    display: block;
+    width: 16px;
+    height: 96px;
+    margin: 0 auto 43px;
+    path {
+      fill: $red;
+    }
+  }
+  &_train {
+    margin-top: 180px;
+    padding-top: 186px;
+    background-color: rgba(230, 228, 0, 0.05);
+    .row {
+      margin-left: -41px;
+      margin-right: -41px;
+      >div {
+        padding-left: 41px;
+        padding-right: 41px;
+      }
+    }
+    &_pic {
+      width: 252px;
+      height: 252px;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 80px 0 0 $marrs-green;
+      margin: 0 auto 49px;
+      transform: translateX(-40px);
+      >img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+      }
+    }
+    &_item {
+      h2 {
+        font-size: 39px;
+        text-align: center;
+        color: $not-just-black;
+        font-weight: 700;
+        margin-bottom: 34px;
+      }
+    }
+    &_info {
+      h3 {
+        padding: 10px 34px;
+        width: fit-content;
+        margin: 0 auto 34px;
+        border-radius: 100px;
+        background-color: $marrs-green;
+        font-size: 34px;
+        font-weight: 500;
+        color: #fff;
+      }
+      ul {
+        li {
+          font-size: 31px;
+          font-weight: 500;
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &.highlight {
+            color: $marrs-green;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1700px) {
+    &_route {
+      margin-bottom: 188px;
+      margin-top: 169px;
+    }
+    &_title {
+      width: 113px;
+      margin-bottom: 32px;
+    }
+    &_name {
+      font-size: 31px;
+      margin-bottom: 32px;
+    }
+    &_next {
+      width: 12px;
+      height: 72px;
+      margin-bottom: 32px;
+    }
+    &_train {
+      margin-top: 135px;
+      padding-top: 140px;
+      .row {
+        margin-left: -31px;
+        margin-right: -31px;
+        >div {
+          padding-left: 31px;
+          padding-right: 31px;
+        }
+      }
+      &_pic {
+        width: 189px;
+        height: 189px;
+        box-shadow: 60px 0 0 $marrs-green;
+        margin-bottom: 38px;
+        transform: translateX(-30px);
+      }
+      &_item {
+        h2 {
+          font-size: 26px;
+          margin-bottom: 34px;
+        }
+      }
+      &_info {
+        h3 {
+          padding: 8px 26px;
+          margin-bottom: 26px;
+          font-size: 26px;
+        }
+        ul {
+          li {
+            font-size: 23px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    &_train {
+      &_item {
+        margin-bottom: 80px;
+      }
+      &_info {
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .row {
+        margin: 0;
+        >div {
+          padding: 0 45px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &_route {
+      margin-top: 40px;
+      margin-bottom: 90px;
+    }
+    &_title {
+      width: 55px;
+      margin-bottom: 23px;
+    }
+    &_name {
+      font-size: 23px;
+      margin-bottom: 23px;
+    }
+    &_next {
+      width: 10px;
+      height: 60px;
+      margin-bottom: 23px;
+    }
+    &_train {
+      margin-top: 77px;
+      padding-top: 68px;
+      &_pic {
+        width: 150px;
+        height: 150px;
+        box-shadow: 48px 0 0 $marrs-green;
+        margin-bottom: 29px;
+        transform: translateX(-24px);
+      }
+      &_item {
+        h2 {
+          font-size: 23px;
+          margin-bottom: 20px;
+        }
+      }
+      &_info {
+        h3 {
+          padding: 5px 20px;
+          margin-bottom: 20px;
+          font-size: 20px;
+        }
+        ul {
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mb-41 {
+  margin-bottom: 41px;
 }

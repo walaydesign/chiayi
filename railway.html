@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header border-green">
+      <div class="container">
+        <a href="./" class="header_logo"
+          ><img src="./public/img/logo.svg" alt=""
+        /></a>
+        <div class="header_main">
+          <nav class="header_nav">
+            <ul class="header_nav_first">
+              <li class="header_nav_item"><a href="">交通資訊</a></li>
+              <li class="header_nav_item has-child color-orange">
+                <a class="header_item" href="./index.html#day1">
+                  <span>
+                    慢旅一日遊
+                    <svg
+                      width="23"
+                      height="9"
+                      viewBox="0 0 23 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.696 -0.000107765L0 1.51189L11.184 8.63989L22.368 1.51189L21.672 -0.000107765L11.184 6.71989L0.696 -0.000107765Z"
+                        fill="#4B4B4B"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="">雲端慢旅</a></li>
+                  <li><a href="">原味慢旅</a></li>
+                  <li><a href="">人文慢旅</a></li>
+                  <li><a href="">森活慢旅</a></li>
+                  <li><a href="">茶道慢旅</a></li>
+                </ul>
+              </li>
+              <li class="header_nav_item has-child color-blue">
+                <a class="header_item" href="./index.html#day2">
+                  <span>
+                    慢旅二日遊
+                    <svg
+                      width="23"
+                      height="9"
+                      viewBox="0 0 23 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.696 -0.000107765L0 1.51189L11.184 8.63989L22.368 1.51189L21.672 -0.000107765L11.184 6.71989L0.696 -0.000107765Z"
+                        fill="#4B4B4B"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="">森山慢遊</a></li>
+                  <li><a href="">茶香慢遊</a></li>
+                  <li><a href="">文創慢旅</a></li>
+                </ul>
+              </li>
+              <li class="header_nav_item has-child color-green">
+                <a class="header_item" href="./index.html#day3">
+                  <span>
+                    慢旅三日遊
+                    <svg
+                      width="23"
+                      height="9"
+                      viewBox="0 0 23 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.696 -0.000107765L0 1.51189L11.184 8.63989L22.368 1.51189L21.672 -0.000107765L11.184 6.71989L0.696 -0.000107765Z"
+                        fill="#4B4B4B"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="./route-A.html">走！去阿里山</a></li>
+                  <li><a href="./route-B.html">鄒！去部落</a></li>
+                </ul>
+              </li>
+              <li class="header_nav_item has-child color-marrs active">
+                <a class="header_item" href="./index.html#railway">
+                  <span>
+                    鐵道慢旅
+                    <svg
+                      width="23"
+                      height="9"
+                      viewBox="0 0 23 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.696 -0.000107765L0 1.51189L11.184 8.63989L22.368 1.51189L21.672 -0.000107765L11.184 6.71989L0.696 -0.000107765Z"
+                        fill="#4B4B4B"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="header_nav_second">
+                  <li><a href="">阿里山林鐵</a></li>
+                  <li><a href="">公共運輸</a></li>
+                  <li><a href="">人文慢旅</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="header_lang">
+              <div class="header_lang_title">Language▼</div>
+              <ul>
+                <li><a href="" class="active">中文</a></li>
+                <li><a href="">English</a></li>
+                <li><a href="">日本語</a></li>
+                <li><a href="">한국어</a></li>
+                <li><a href="">ภาษาไทย</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header_search">
+            <input type="text" placeholder="請輸入關鍵字" />
+            <button><img src="./public/img/search.svg" alt="" /></button>
+          </div>
+          <button class="header_menu d-xl-none">
+            <div class="header_menu_inner">
+              <div class="bar bar-top"></div>
+              <div class="bar bar-middle"></div>
+              <div class="bar bar-bottom"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <button class="header_top d-xl-block d-none">
+        <img src="./public/img/arrow-up.svg" alt="" />
+      </button>
+    </header>
+
+    <main class="main">
+
+      <div class="banner banner-railway banner-inner">
+        <div class="banner_title railway-title" data-aos="fade-up" data-aos-duration="1000">
+          <img class="d-md-block d-none" src="./public/img/railway-title.svg" alt="">
+          <img class="d-md-none" src="./public/img/railway-title-m.svg" alt="">
+          <h1>搭乘阿里山火車從海拔30公尺爬升至<br class="d-md-block d-none">2,216公尺，進入《紐約時報》<br class="d-md-block d-none">2025年全球必訪勝地</h1>
+        </div>
+        <img class="banner_train d-md-none" src="./public/img/railway-train.png" alt="">
+        <img class="banner_mountain d-md-block d-none" src="./public/img/railway-banner.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img class="banner_mountain d-md-none" src="./public/img/railway-banner-m.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img class="banner_graphic" src="./public/img/railway-banner-graphic.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img class="banner_en" src="./public/img/banner-home-en.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+      </div>
+
+      <div class="railway_route">
+        <div class="container">
+            <img class="d-md-block d-none" src="./public/img/railway-route.png" alt="">
+            <img class="d-md-none" src="./public/img/railway-route-m.png" alt="">
+        </div>
+      </div>
+
+      <div class="route-inner color-red">
+        <div>
+          <div class="route_day mainroute">
+            <div class="container">
+              <div class="route_day_content">
+                <img class="railway_title" src="./public/img/main-route.svg" alt="">
+                <h2 class="railway_name">嘉義火車站</h2>
+                <svg
+                        class="railway_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                </svg>
+                <h2 class="railway_name">北門</h2>
+                <svg
+                        class="railway_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                </svg>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-1.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>奮起湖及其步道群</h3>
+                            <p class="railway_height">海拔82公尺</p>
+                        </div>
+                        <p class="railway_intro">大阪式全檜木建築車站，美拍的熱門景點</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-2.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>竹崎</h3>
+                            <p class="railway_height">海拔127公尺</p>
+                        </div>
+                        <p class="railway_intro">Tiffany藍的日式木造車站，鐵路的登山起點</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-3.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>木屐寮</h3>
+                            <p class="railway_height">海拔324公尺</p>
+                        </div>
+                        <p class="railway_intro">本站無停靠，此地早期盛產製作木屐的好材料—鵝掌柴</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-4.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>樟腦寮</h3>
+                            <p class="railway_height">海拔543公尺</p>
+                        </div>
+                        <p class="railway_intro">X形折返式車站，此地曾是臺灣樟腦重要的輸出地點</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-5.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>獨立山</h3>
+                            <p class="railway_height">海拔743公尺</p>
+                        </div>
+                        <p class="railway_intro">獨立山螺旋登山路段，3種角度看樟腦寮車站</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-6.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>梨園寮</h3>
+                            <p class="railway_height">海拔904公尺</p>
+                        </div>
+                        <p class="railway_intro">無人招呼站，螢河鐵道秘境</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-7.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>交力坪</h3>
+                            <p class="railway_height">海拔997公尺</p>
+                        </div>
+                        <p class="railway_intro">日式懷舊車站，可遠眺瑞豐峽谷全貌</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-8.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>水社寮</h3>
+                            <p class="railway_height">海拔1186公尺</p>
+                        </div>
+                        <p class="railway_intro">行經8個隧道，軌道呈現180度「Ω」字形</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-9.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>奮起湖</h3>
+                            <p class="railway_height">海拔1403公尺</p>
+                        </div>
+                        <p class="railway_intro">充滿懷舊風情的車站、山城，鐵路登山線最大中繼站</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-10.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>多林</h3>
+                            <p class="railway_height">海拔1516公尺</p>
+                        </div>
+                        <p class="railway_intro">全線最有秘境感的車站，車站建築彩繪鄒族圖騰</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway mb-41">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-11.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>十字路</h3>
+                            <p class="railway_height">海拔1534公尺</p>
+                        </div>
+                        <p class="railway_intro">來吉、達邦等部落的古道交會處，公路和鐵路最靠近的地方</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <svg
+                        class="railway_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                </svg>
+                <h2 class="railway_name">屏遮那</h2>
+                <svg
+                        class="railway_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                </svg>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-12.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>二萬平</h3>
+                            <p class="railway_height">海拔2000公尺</p>
+                        </div>
+                        <p class="railway_intro">視野極好能一覽群山，是觀夕照、晚霞、雲海的絕佳地點</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="route_place railway">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="route_place_pic">
+                        <div class="route_place_pic_inner">
+                          <img
+                            class="route_place_img"
+                            src="./public/img/railway-main-13.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 route_place_text-wrap">
+                      <div class="route_place_text">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>阿里山</h3>
+                            <p class="railway_height">海拔2216公尺</p>
+                        </div>
+                        <p class="railway_intro">全台最大的木造建築車站，微彎半拱的木柱月台</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="route_day branch">
+            <div class="container">
+                <img class="railway_title" src="./public/img/branch.svg" alt="">
+              <div class="route_day_content">
+                <div class="route_place railway">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="route_place_pic">
+                          <div class="route_place_pic_inner">
+                            <img
+                              class="route_place_img"
+                              src="./public/img/railway-branch-1.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 route_place_text-wrap">
+                        <div class="route_place_text">
+                          <div class="d-flex align-items-center justify-content-between">
+                              <h3>沼平</h3>
+                              <p class="railway_height">海拔2274公尺</p>
+                          </div>
+                          <p class="railway_intro">由日本五十嵐設計師親手打造，以無鐵釘工法展現復古日式鐵道風華</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <svg
+                          class="route_place_next"
+                          width="16"
+                          height="96"
+                          viewBox="0 0 16 96"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                            fill="#ABCD03"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="route_place railway">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="route_place_pic">
+                          <div class="route_place_pic_inner">
+                            <img
+                              class="route_place_img"
+                              src="./public/img/railway-branch-2.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 route_place_text-wrap">
+                        <div class="route_place_text">
+                          <div class="d-flex align-items-center justify-content-between">
+                              <h3>對高岳</h3>
+                              <p class="railway_height">海拔2405公尺</p>
+                          </div>
+                          <p class="railway_intro">本站無停靠，木造弧形月台，在月台賞日出、追銀河星空</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <svg
+                          class="route_place_next"
+                          width="16"
+                          height="96"
+                          viewBox="0 0 16 96"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                            fill="#ABCD03"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="route_place railway">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="route_place_pic">
+                          <div class="route_place_pic_inner">
+                            <img
+                              class="route_place_img"
+                              src="./public/img/railway-branch-3.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 route_place_text-wrap">
+                        <div class="route_place_text">
+                          <div class="d-flex align-items-center justify-content-between">
+                              <h3>祝山</h3>
+                              <p class="railway_height">海拔2405公尺</p>
+                          </div>
+                          <p class="railway_intro">臺灣鐵路最高點，雲頂上最美的車站</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <svg
+                          class="route_place_next"
+                          width="16"
+                          height="96"
+                          viewBox="0 0 16 96"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                            fill="#ABCD03"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="route_place railway">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="route_place_pic">
+                          <div class="route_place_pic_inner">
+                            <img
+                              class="route_place_img"
+                              src="./public/img/railway-branch-4.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 route_place_text-wrap">
+                        <div class="route_place_text">
+                          <div class="d-flex align-items-center justify-content-between">
+                              <h3>神木</h3>
+                              <p class="railway_height">海拔2138公尺</p>
+                          </div>
+                          <p class="railway_intro">因曾有神木而聞名，探索山林美景與鐵道文化的必訪之地</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="railway_train">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="railway_train_item">
+                            <div class="railway_train_pic">
+                                <img src="./public/img/train-1.png" alt="">
+                            </div>
+                            <h2>阿里山號</h2>
+                            <div class="railway_train_info">
+                                <h3>訂票資訊</h3>
+                                <ul>
+                                    <li>行駛：本線（嘉義↔阿里山）</li>
+                                    <li>車廂：黃紅色</li>
+                                    <li class="highlight">✦檜木車廂｜每週三「沼平線」限定</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="railway_train_item">
+                            <div class="railway_train_pic">
+                                <img src="./public/img/train-2.png" alt="">
+                            </div>
+                            <h2>福森號</h2>
+                            <div class="railway_train_info">
+                                <h3>訂票資訊</h3>
+                                <ul>
+                                    <li>車廂：檜木</li>
+                                    <li class="highlight">車廂以台灣特有種紅檜及扁柏木材打造，並採穹頂式設計，營造視覺享受。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="railway_train_item">
+                            <div class="railway_train_pic">
+                                <img src="./public/img/train-3.png" alt="">
+                            </div>
+                            <h2>栩悅號</h2>
+                            <div class="railway_train_info">
+                                <h3>訂票資訊</h3>
+                                <ul>
+                                    <li>車廂：藍黃白配色</li>
+                                    <li class="highlight">百年舊車廂重新彩繪成以阿里山迎賓鳥之稱的「栗背林鴝」藍黃白相間配色。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lantern d-xl-none">
+                  <img src="./public/img/lantern.svg" alt="" />
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="container">
+          <div>
+            <img class="footer_logo" src="./public/img/logo.svg" alt="" />
+            <div class="footer_line">
+              <p>加入「慢遊嘉義」LINE官方帳號，獲取即時旅遊資訊！</p>
+              <a href=""> LINE<br />官方帳號 </a>
+            </div>
+          </div>
+          <div class="footer_info">
+            <h3>諮詢服務專線</h3>
+            <div class="d-xl-block d-flex flex-wrap gap-sm-4">
+              <div class="footer_info_item phone">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_7596_4628)">
+                    <path
+                      d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z"
+                      fill="#4B4B4B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>(05)362-8123</span>
+              </div>
+              <div class="footer_info_item phone icon-white">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_7596_4628)">
+                    <path
+                      d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z"
+                      fill="#4B4B4B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>分機322 周小姐</span>
+              </div>
+              <div class="footer_info_item phone icon-white">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_7596_4628)">
+                    <path
+                      d="M16.6234 13.4435C17.1308 13.9531 17.1308 14.8371 16.5898 15.3838C15.6424 16.3016 14.9974 16.8111 13.6434 16.9832C13.4754 17.017 9.51099 17.3915 4.56554 12.4245C1.00764 8.88478 -0.31272 6.22916 0.0602044 3.33734C0.194592 2.01122 0.73886 1.33297 1.65269 0.411773C2.1936 -0.131498 3.07384 -0.131498 3.58451 0.378029L6.22522 3.03027C6.73254 3.5398 6.73254 4.42388 6.19163 4.97053L5.44578 5.71963C5.10645 6.06044 5.03926 6.60371 5.27779 7.01201C5.8523 7.99732 6.43016 8.84766 7.3104 9.76886C8.19064 10.6529 9.03728 11.2333 10.0553 11.8103C10.4618 12.0499 11.0027 11.9791 11.342 11.6416L12.0879 10.8925C12.6288 10.3492 13.509 10.3492 14.0197 10.8588L16.6268 13.4435H16.6234Z"
+                      fill="#4B4B4B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_7596_4628">
+                      <rect width="17" height="17" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>分機324 劉小姐</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer_info">
+            <h3>探索嘉義</h3>
+            <div class="d-xl-block d-flex gap-5">
+              <a href="" class="footer_info_item media">
+                <img src="./public/img/fb.svg" alt="" />
+                <span>Facebook</span>
+              </a>
+              <a href="" class="footer_info_item media">
+                <img src="./public/img/ig.svg" alt="" />
+                <span>Instagram</span>
+              </a>
+              <a href="" class="footer_info_item media">
+                <img src="./public/img/yt.svg" alt="" />
+                <span>YouTube</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_event">
+            <div class="d-xl-block d-flex align-items-center gap-3 mb-4">
+              <img
+                class="footer_event_pic"
+                src="./public/img/2026-lantern.svg"
+                alt=""
+              />
+              <h4 class="footer_event_duration">展期3/3—3/15</h4>
+            </div>
+            <div>
+              <div class="footer_info_item lantern">
+                <img src="./public/img/address.svg" alt="" />
+                <span>612嘉義縣太保市太子大道158號</span>
+              </div>
+              <div class="footer_info_item lantern">
+                <img src="./public/img/clock.svg" alt="" />
+                <span>週一～週四 14:00-22:00 / 週五～週日 10:00-22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="footer_copyright">
+            <p class="footer_copyright_name">
+              <strong>嘉義縣文化觀光局</strong>
+            </p>
+            <p class="footer_copyright_content">
+              2024 © Copyright Culture& Tourism Bureau of Chiayi County
+            </p>
+          </div>
+          <img class="footer_bottom_logo" src="./public/img/logo2.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/common.js"></script>
+  </body>
+</html>

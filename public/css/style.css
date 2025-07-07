@@ -972,6 +972,15 @@ button {
   background-color: #abcd03;
 }
 
+.banner-railway {
+  background-color: #009683;
+}
+
+.banner-railway.banner-inner .banner_title img {
+  width: 24vw;
+  margin-bottom: 40px;
+}
+
 .banner-inner .banner_title img {
   width: 31.09vw;
   margin-bottom: 48px;
@@ -1012,6 +1021,13 @@ button {
   width: 4.06%;
   right: 2.66vw;
   bottom: 6.5vw;
+}
+
+.banner_train {
+  position: absolute;
+  width: 25.9vw;
+  top: 6.15vw;
+  right: 6.41vw;
 }
 
 @media screen and (max-width: 1970px) {
@@ -1086,6 +1102,10 @@ button {
     width: 6.78%;
     right: 26px;
     bottom: 3.96vw;
+  }
+  .banner-railway.banner-inner .banner_title img {
+    width: 23vw;
+    margin-bottom: 14px;
   }
 }
 
@@ -1734,6 +1754,10 @@ button {
   fill: #0ca7f1;
 }
 
+.route-inner.color-red .route_place_next path {
+  fill: #D06C15;
+}
+
 .route-inner .lantern {
   position: absolute;
   right: 5.73vw;
@@ -1816,6 +1840,14 @@ button {
 
 .route_day:last-child {
   margin-bottom: 0;
+}
+
+.route_day.mainroute .railway_intro {
+  color: #D06C15;
+}
+
+.route_day.branch .railway_intro {
+  color: #009683;
 }
 
 .route_hotel {
@@ -2004,6 +2036,51 @@ button {
   top: 0;
 }
 
+.route_place.railway .route_place_pic_inner {
+  padding-bottom: 71.67%;
+}
+
+.route_place.railway .route_place_text {
+  padding-right: 70px;
+  height: 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.route_place.railway .route_place_text h3 {
+  margin: 0;
+}
+
+.route_place.railway .route_place_text .railway_height {
+  color: #B4B4B4;
+  font-size: 25px;
+  margin: 0;
+}
+
+.route_place.railway .route_place_text .railway_intro {
+  font-size: 29px;
+  font-weight: 500;
+  margin: 18px 0 0;
+  text-align: justify;
+}
+
+.route_place.railway .route_place_text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 @media screen and (max-width: 1700px) {
   .route_title img {
     width: 260px;
@@ -2129,6 +2206,16 @@ button {
   }
   .route_place_lantern {
     width: 150px;
+  }
+  .route_place.railway .route_place_text {
+    padding-right: 53px;
+  }
+  .route_place.railway .route_place_text .railway_height {
+    font-size: 19px;
+  }
+  .route_place.railway .route_place_text .railway_intro {
+    font-size: 22px;
+    margin-top: 14px;
   }
   .route-inner .lantern {
     right: 40px;
@@ -2328,6 +2415,18 @@ button {
   .route_place_infowrap {
     margin-bottom: 35px;
   }
+  .route_place.railway .route_place_text {
+    padding: 0 20px;
+    height: auto;
+    width: 100%;
+  }
+  .route_place.railway .route_place_text .railway_height {
+    font-size: 16px;
+  }
+  .route_place.railway .route_place_text .railway_intro {
+    font-size: 18px;
+    margin-top: 11px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2452,5 +2551,235 @@ button {
   .lantern img {
     width: 130px;
   }
+}
+
+.railway_route {
+  margin-bottom: 250px;
+  margin-top: 225px;
+}
+
+.railway_route img {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.railway_title {
+  width: 150px;
+  margin: 0 auto 43px;
+  display: block;
+}
+
+.railway_name {
+  text-align: center;
+  font-size: 41px;
+  color: #4b4b4b;
+  font-weight: 700;
+  margin-bottom: 43px;
+}
+
+.railway_next {
+  display: block;
+  width: 16px;
+  height: 96px;
+  margin: 0 auto 43px;
+}
+
+.railway_next path {
+  fill: #D06C15;
+}
+
+.railway_train {
+  margin-top: 180px;
+  padding-top: 186px;
+  background-color: rgba(230, 228, 0, 0.05);
+}
+
+.railway_train .row {
+  margin-left: -41px;
+  margin-right: -41px;
+}
+
+.railway_train .row > div {
+  padding-left: 41px;
+  padding-right: 41px;
+}
+
+.railway_train_pic {
+  width: 252px;
+  height: 252px;
+  border-radius: 50%;
+  position: relative;
+  -webkit-box-shadow: 80px 0 0 #009683;
+          box-shadow: 80px 0 0 #009683;
+  margin: 0 auto 49px;
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+
+.railway_train_pic > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.railway_train_item h2 {
+  font-size: 39px;
+  text-align: center;
+  color: #4b4b4b;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+
+.railway_train_info h3 {
+  padding: 10px 34px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 34px;
+  border-radius: 100px;
+  background-color: #009683;
+  font-size: 34px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.railway_train_info ul li {
+  font-size: 31px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.railway_train_info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.railway_train_info ul li.highlight {
+  color: #009683;
+}
+
+@media screen and (max-width: 1700px) {
+  .railway_route {
+    margin-bottom: 188px;
+    margin-top: 169px;
+  }
+  .railway_title {
+    width: 113px;
+    margin-bottom: 32px;
+  }
+  .railway_name {
+    font-size: 31px;
+    margin-bottom: 32px;
+  }
+  .railway_next {
+    width: 12px;
+    height: 72px;
+    margin-bottom: 32px;
+  }
+  .railway_train {
+    margin-top: 135px;
+    padding-top: 140px;
+  }
+  .railway_train .row {
+    margin-left: -31px;
+    margin-right: -31px;
+  }
+  .railway_train .row > div {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+  .railway_train_pic {
+    width: 189px;
+    height: 189px;
+    -webkit-box-shadow: 60px 0 0 #009683;
+            box-shadow: 60px 0 0 #009683;
+    margin-bottom: 38px;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  .railway_train_item h2 {
+    font-size: 26px;
+    margin-bottom: 34px;
+  }
+  .railway_train_info h3 {
+    padding: 8px 26px;
+    margin-bottom: 26px;
+    font-size: 26px;
+  }
+  .railway_train_info ul li {
+    font-size: 23px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .railway_train_item {
+    margin-bottom: 80px;
+  }
+  .railway_train_info {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .railway_train .row {
+    margin: 0;
+  }
+  .railway_train .row > div {
+    padding: 0 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .railway_route {
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+  .railway_title {
+    width: 55px;
+    margin-bottom: 23px;
+  }
+  .railway_name {
+    font-size: 23px;
+    margin-bottom: 23px;
+  }
+  .railway_next {
+    width: 10px;
+    height: 60px;
+    margin-bottom: 23px;
+  }
+  .railway_train {
+    margin-top: 77px;
+    padding-top: 68px;
+  }
+  .railway_train_pic {
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: 48px 0 0 #009683;
+            box-shadow: 48px 0 0 #009683;
+    margin-bottom: 29px;
+    -webkit-transform: translateX(-24px);
+            transform: translateX(-24px);
+  }
+  .railway_train_item h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .railway_train_info h3 {
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .railway_train_info ul li {
+    font-size: 18px;
+  }
+}
+
+.mb-41 {
+  margin-bottom: 41px;
 }
 /*# sourceMappingURL=style.css.map */
