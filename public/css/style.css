@@ -1691,6 +1691,10 @@ button {
   fill: #abcd03;
 }
 
+.route-inner.color-green .railway_next path {
+  fill: #abcd03;
+}
+
 .route-inner.color-yellow .route_pin svg path {
   fill: #f6ab00;
 }

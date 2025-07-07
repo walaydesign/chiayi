@@ -1672,6 +1672,11 @@ button {
             }
           }
         }
+        .railway_next {
+          path {
+            fill: $green;
+          }
+        }
       }
       &-yellow {
         .route {
