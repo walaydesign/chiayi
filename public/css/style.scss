@@ -1823,6 +1823,9 @@ button {
       position: absolute;
       right: 5.73vw;
     }
+    &-railway {
+      padding-bottom: 0;
+    }
   }
   &_feat {
     padding: 225px 0 110px;
@@ -2077,6 +2080,14 @@ button {
             display: flex;
             align-items: flex-end;
           }
+        }
+      }
+    }
+    &-manyspots {
+      .row {
+        margin-bottom: 75px;
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }
@@ -2461,7 +2472,14 @@ button {
           }
         }
       }
-      
+      &-manyspots {
+        .row {
+          margin-bottom: 0;
+        }
+        .route_place_infowrap {
+          margin-bottom: 35px !important;
+        }
+      }
     }
   }
   @media screen and (max-width: 767px) {
@@ -2628,6 +2646,7 @@ button {
   &_train {
     margin-top: 180px;
     padding-top: 186px;
+    padding-bottom: 47.71vw;
     background-color: rgba(230, 228, 0, 0.05);
     .row {
       margin-left: -41px;
@@ -2664,7 +2683,7 @@ button {
       }
     }
     &_info {
-      h3 {
+      a {
         padding: 10px 34px;
         width: fit-content;
         margin: 0 auto 34px;
@@ -2673,6 +2692,9 @@ button {
         font-size: 34px;
         font-weight: 500;
         color: #fff;
+        &:hover {
+          background-color: $green;
+        }
       }
       ul {
         li {
@@ -2732,7 +2754,7 @@ button {
         }
       }
       &_info {
-        h3 {
+        a {
           padding: 8px 26px;
           margin-bottom: 26px;
           font-size: 26px;
@@ -2744,6 +2766,11 @@ button {
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    &_train {
+      padding-bottom: 0;
     }
   }
   @media screen and (max-width: 991px) {
@@ -2798,7 +2825,7 @@ button {
         }
       }
       &_info {
-        h3 {
+        a {
           padding: 5px 20px;
           margin-bottom: 20px;
           font-size: 20px;
@@ -2860,9 +2887,14 @@ button {
       margin-bottom: 145px;
       h2 {
         font-size: 40px;
-        margin-bottom: 16px;
-        color: $green;
-        font-weight: 700;
+        a {
+          margin-bottom: 16px;
+          color: $green;
+          font-weight: 700;
+          &:hover {
+            color: $marrs-green;
+          }
+        }
       }
       ul {
         li {

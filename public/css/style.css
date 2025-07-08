@@ -1788,6 +1788,10 @@ button {
   right: 5.73vw;
 }
 
+.route-inner-railway {
+  padding-bottom: 0;
+}
+
 .route_feat {
   padding: 225px 0 110px;
 }
@@ -2104,6 +2108,14 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.route_place-manyspots .row {
+  margin-bottom: 75px;
+}
+
+.route_place-manyspots .row:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1700px) {
@@ -2452,6 +2464,12 @@ button {
     font-size: 18px;
     margin-top: 11px;
   }
+  .route_place-manyspots .row {
+    margin-bottom: 0;
+  }
+  .route_place-manyspots .route_place_infowrap {
+    margin-bottom: 35px !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2617,6 +2635,7 @@ button {
 .railway_train {
   margin-top: 180px;
   padding-top: 186px;
+  padding-bottom: 47.71vw;
   background-color: rgba(230, 228, 0, 0.05);
 }
 
@@ -2660,7 +2679,7 @@ button {
   margin-bottom: 34px;
 }
 
-.railway_train_info h3 {
+.railway_train_info a {
   padding: 10px 34px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -2671,6 +2690,10 @@ button {
   font-size: 34px;
   font-weight: 500;
   color: #fff;
+}
+
+.railway_train_info a:hover {
+  background-color: #abcd03;
 }
 
 .railway_train_info ul li {
@@ -2730,7 +2753,7 @@ button {
     font-size: 26px;
     margin-bottom: 34px;
   }
-  .railway_train_info h3 {
+  .railway_train_info a {
     padding: 8px 26px;
     margin-bottom: 26px;
     font-size: 26px;
@@ -2738,6 +2761,12 @@ button {
   .railway_train_info ul li {
     font-size: 23px;
     margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .railway_train {
+    padding-bottom: 0;
   }
 }
 
@@ -2794,7 +2823,7 @@ button {
     font-size: 23px;
     margin-bottom: 20px;
   }
-  .railway_train_info h3 {
+  .railway_train_info a {
     padding: 5px 20px;
     margin-bottom: 20px;
     font-size: 20px;
@@ -2872,9 +2901,16 @@ button {
 
 .traffic-info_item h2 {
   font-size: 40px;
+}
+
+.traffic-info_item h2 a {
   margin-bottom: 16px;
   color: #abcd03;
   font-weight: 700;
+}
+
+.traffic-info_item h2 a:hover {
+  color: #009683;
 }
 
 .traffic-info_item ul li {
