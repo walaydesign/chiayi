@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>漫遊嘉義 日光之城</title>
+    <title>慢遊嘉義 日光之城</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -169,8 +169,15 @@
 
       <div class="railway_route">
         <div class="container">
-            <img class="d-md-block d-none" src="./public/img/railway-route.png" alt="">
-            <img class="d-md-none" src="./public/img/railway-route-m.png" alt="">
+            <img class="w-100 d-md-block d-none" src="./public/img/railway-route-bg.svg" alt="">
+            <img class="w-100 d-md-none" src="./public/img/railway-route-bg-m.svg" alt="">
+            <img class="railway_route_station station-1" data-station="#zhuqi" src="./public/img/railway-station-1.svg" alt="">
+            <img class="railway_route_station station-2" data-station="#independent" src="./public/img/railway-station-2.svg" alt="">
+            <img class="railway_route_station station-3" data-station="#lake" src="./public/img/railway-station-3.svg" alt="">
+            <img class="railway_route_station station-4" data-station="#scaredtree" src="./public/img/railway-station-4.svg" alt="">
+            <img class="railway_route_station station-5" data-station="#alishan" src="./public/img/railway-station-5.svg" alt="">
+            <img class="railway_route_station station-6" data-station="#zhaoping" src="./public/img/railway-station-6.svg" alt="">
+            <img class="railway_route_station station-7" data-station="#zhushan" src="./public/img/railway-station-7.svg" alt="">
         </div>
       </div>
 
@@ -224,7 +231,7 @@
                     <div class="col-lg-6 route_place_text-wrap">
                       <div class="route_place_text">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h3>奮起湖及其步道群</h3>
+                            <h3>鹿麻產</h3>
                             <p class="railway_height">海拔82公尺</p>
                         </div>
                         <p class="railway_intro">大阪式全檜木建築車站，美拍的熱門景點</p>
@@ -247,7 +254,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="route_place railway">
+                <div class="route_place railway" id="zhuqi">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="route_place_pic">
@@ -364,7 +371,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="route_place railway">
+                <div class="route_place railway" id="independent">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="route_place_pic">
@@ -520,7 +527,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="route_place railway">
+                <div class="route_place railway" id="lake">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="route_place_pic">
@@ -688,7 +695,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="route_place railway">
+                <div class="route_place railway" id="alishan">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="route_place_pic">
@@ -719,7 +726,7 @@
             <div class="container">
                 <img class="railway_title" src="./public/img/branch.svg" alt="">
               <div class="route_day_content">
-                <div class="route_place railway">
+                <div class="route_place railway" id="zhaoping">
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="route_place_pic">
@@ -799,7 +806,7 @@
                     </div>
                   </div>
 
-                <div class="route_place railway">
+                <div class="route_place railway" id="zhushan">
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="route_place_pic">
@@ -839,7 +846,7 @@
                     </div>
                   </div>
 
-                <div class="route_place railway">
+                <div class="route_place railway" id="scaredtree">
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="route_place_pic">
@@ -1066,5 +1073,20 @@
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
     <script src="./public/js/common.js"></script>
+    <script>
+      $(".railway_route_station").click(function(){
+          let headerTop;
+          if($(window).width()<=1199) {
+            headerTop = 73;
+          }else if($(window).width()<=1900) {
+            headerTop = 95;
+          }else {
+            headerTop = 140;
+          }
+          let target = $(this).data("station");
+          var top = $(target).offset().top - headerTop;
+          $("html, body").animate({ scrollTop: top }, parseInt(300));
+      })
+    </script>
   </body>
 </html>

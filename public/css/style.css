@@ -713,6 +713,16 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer_info_item:hover {
+  opacity: 0.7;
+}
+
+.footer_info_item:hover span {
+  color: #4b4b4b;
 }
 
 .footer_info_item.phone svg {
@@ -2599,12 +2609,61 @@ button {
 .railway_route {
   margin-bottom: 250px;
   margin-top: 225px;
+  padding: 0 20px;
 }
 
-.railway_route img {
+.railway_route .container {
   max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+
+.railway_route_station {
+  position: absolute;
+  width: 9.44%;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.railway_route_station:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.railway_route_station.station-1 {
+  left: 30.79%;
+  top: 30.2%;
+}
+
+.railway_route_station.station-2 {
+  left: 30.79%;
+  top: 45.89%;
+}
+
+.railway_route_station.station-3 {
+  left: 30.79%;
+  top: 61.74%;
+}
+
+.railway_route_station.station-4 {
+  left: 36.11%;
+  top: 76.07%;
+}
+
+.railway_route_station.station-5 {
+  left: 23.06%;
+  top: 88.17%;
+}
+
+.railway_route_station.station-6 {
+  left: 48.84%;
+  top: 88.17%;
+}
+
+.railway_route_station.station-7 {
+  left: 76.96%;
+  top: 88.17%;
 }
 
 .railway_title {
@@ -2792,6 +2851,38 @@ button {
   .railway_route {
     margin-top: 40px;
     margin-bottom: 90px;
+    padding: 0 7vw;
+  }
+  .railway_route_station {
+    width: 16.18%;
+  }
+  .railway_route_station.station-1 {
+    left: 36.76%;
+    top: 26.3%;
+  }
+  .railway_route_station.station-2 {
+    left: 36.76%;
+    top: 42.21%;
+  }
+  .railway_route_station.station-3 {
+    left: 36.76%;
+    top: 58.3%;
+  }
+  .railway_route_station.station-4 {
+    left: 45.88%;
+    top: 72.84%;
+  }
+  .railway_route_station.station-5 {
+    left: 23.53%;
+    top: 85.12%;
+  }
+  .railway_route_station.station-6 {
+    left: 45%;
+    top: 85.12%;
+  }
+  .railway_route_station.station-7 {
+    left: 78.82%;
+    top: 85.12%;
   }
   .railway_title {
     width: 55px;

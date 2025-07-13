@@ -663,6 +663,13 @@ button {
       margin-bottom: 23px;
       gap: 10px;
       width: fit-content;
+      transition: $transition;
+      &:hover {
+        opacity: 0.7;
+        span {
+          color: $not-just-black;
+        }
+      }
       &.phone {
         svg {
           width: 17px;
@@ -2616,10 +2623,50 @@ button {
   &_route {
     margin-bottom: 250px;
     margin-top: 225px;
-    img {
+    padding: 0 20px;
+    .container {
       max-width: 1300px;
-      width: 100%;
-      margin: 0 auto;
+      position: relative;
+      padding: 0;
+    }
+    &_station {
+      position: absolute;
+      width: 9.44%;
+      cursor: pointer;
+      transition: $transition;
+      &:hover {
+        transform: scale(1.1);
+      }
+      &.station {
+        &-1 {
+          left: 30.79%;
+          top: 30.2%;
+        }
+        &-2 {
+          left: 30.79%;
+          top: 45.89%;
+        }
+        &-3 {
+          left: 30.79%;
+          top: 61.74%;
+        }
+        &-4 {
+          left: 36.11%;
+          top: 76.07%;
+        }
+        &-5 {
+          left: 23.06%;
+          top: 88.17%;
+        }
+        &-6 {
+          left: 48.84%;
+          top: 88.17%;
+        }
+        &-7 {
+          left: 76.96%;
+          top: 88.17%;
+        }
+      }
     }
   }
   &_title {
@@ -2794,6 +2841,41 @@ button {
     &_route {
       margin-top: 40px;
       margin-bottom: 90px;
+      padding: 0 7vw;
+      &_station {
+        width: 16.18%;
+        &.station {
+          &-1 {
+            left: 36.76%;
+            top: 26.3%;
+          }
+          &-2 {
+            left: 36.76%;
+            top: 42.21%;
+          }
+          &-3 {
+            left: 36.76%;
+            top: 58.3%;
+          }
+          &-4 {
+            left: 45.88%;
+            top: 72.84%;
+          }
+          &-5 {
+            left: 23.53%;
+            top: 85.12%;
+          }
+          &-6 {
+            left: 45%;
+            top: 85.12%;
+          }
+          &-7 {
+            left: 78.82%;
+            top: 85.12%;
+          }
+        }
+
+      }
     }
     &_title {
       width: 55px;
