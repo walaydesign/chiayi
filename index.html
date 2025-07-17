@@ -217,12 +217,10 @@
           <div class="explore_route d-sm-none">
             <h2>路線選擇</h2>
             <div class="explore_route_btn">
-              <a href="./day1-routeA.html"><img src="./public/img/day-1.svg" alt="" /></a>
-              <a href="./day2-routeA.html"><img src="./public/img/day-2.svg" alt="" /></a>
-              <a href="./day3-routeA.html"
-                ><img src="./public/img/day-3.svg" alt=""
-              /></a>
-              <a href="./railway.html"><img src="./public/img/railway.svg" alt="" /></a>
+              <button data-target="#day1"><img src="./public/img/day-1.svg" alt="" /></button>
+              <button data-target="#day2"><img src="./public/img/day-2.svg" alt="" /></button>
+              <button data-target="#day3"><img src="./public/img/day-3.svg" alt=""/></button>
+              <button data-target="#railway"><img src="./public/img/railway.svg" alt="" /></button>
             </div>
           </div>
           <div class="row align-items-center">
@@ -837,6 +835,12 @@
 
     <script>
       $(".header_item").click(function () {
+        let target = $(this).data("target");
+        var top = $(target).offset().top;
+        $("html, body").animate({ scrollTop: top }, parseInt(300));
+      });
+
+      $(".explore_route_btn button").click(function () {
         let target = $(this).data("target");
         var top = $(target).offset().top;
         $("html, body").animate({ scrollTop: top }, parseInt(300));

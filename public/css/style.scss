@@ -1145,7 +1145,7 @@ button {
       font-weight: 700;
       margin-bottom: 40px;
     }
-    a {
+    button {
       width: 226px;
       margin: 0 auto 40px;
       padding: 0;
@@ -1156,7 +1156,7 @@ button {
     }
   }
   @media screen and (max-width: 1700px) {
-&_text {
+    &_text {
       p {
         font-size: 26px;
       }
@@ -2250,7 +2250,7 @@ button {
                 font-size: 19px;
               }
               &_intro {
-                font-size: 22px;
+                font-size: 20px;
                 margin-top: 14px;
               }
             }
@@ -2393,6 +2393,7 @@ button {
       }
     }
     &_hotel {
+      margin-top: 30px;
       &_title {
         margin-bottom: 12px;
         gap: 7px;
@@ -2452,7 +2453,8 @@ button {
         transform: none;
       }
       &_name {
-        display: none;
+        font-size: 16px;
+        padding: 8px 12px;
       }
       &_infoname {
         font-size: 18px;
@@ -2740,7 +2742,7 @@ button {
         font-weight: 500;
         color: #fff;
         &:hover {
-          background-color: $green;
+          opacity: 0.5;
         }
       }
       ul {
@@ -2748,6 +2750,7 @@ button {
           font-size: 31px;
           font-weight: 500;
           margin-bottom: 10px;
+          text-align: justify;
           &:last-child {
             margin-bottom: 0;
           }
@@ -2808,7 +2811,7 @@ button {
         }
         ul {
           li {
-            font-size: 23px;
+            font-size: 21px;
             margin-bottom: 8px;
           }
         }
@@ -2958,10 +2961,11 @@ button {
       }
     }
     &_text {
-      font-size: 30px;
+      font-size: px;
       margin: 0;
       color: $not-just-black;
       width: calc(100% - 300px - 105px);
+      text-align: justify;
     }
   }
   &-info {
@@ -2974,7 +2978,7 @@ button {
           color: $green;
           font-weight: 700;
           &:hover {
-            color: $marrs-green;
+            opacity: 0.5;
           }
         }
       }

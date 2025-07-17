@@ -1190,14 +1190,14 @@ button {
   margin-bottom: 40px;
 }
 
-.explore_route a {
+.explore_route button {
   width: 226px;
   margin: 0 auto 40px;
   padding: 0;
   display: block;
 }
 
-.explore_route a img {
+.explore_route button img {
   width: 100%;
 }
 
@@ -2261,7 +2261,7 @@ button {
     font-size: 19px;
   }
   .route_place.railway .route_place_text .railway_intro {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 14px;
   }
   .route-inner .lantern {
@@ -2395,6 +2395,9 @@ button {
     padding-left: 25px;
     padding-right: 25px;
   }
+  .route_hotel {
+    margin-top: 30px;
+  }
   .route_hotel_title {
     margin-bottom: 12px;
     gap: 7px;
@@ -2453,7 +2456,8 @@ button {
             transform: none;
   }
   .route_place_name {
-    display: none;
+    font-size: 16px;
+    padding: 8px 12px;
   }
   .route_place_infoname {
     font-size: 18px;
@@ -2752,13 +2756,14 @@ button {
 }
 
 .railway_train_info a:hover {
-  background-color: #abcd03;
+  opacity: 0.5;
 }
 
 .railway_train_info ul li {
   font-size: 31px;
   font-weight: 500;
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 .railway_train_info ul li:last-child {
@@ -2818,7 +2823,7 @@ button {
     font-size: 26px;
   }
   .railway_train_info ul li {
-    font-size: 23px;
+    font-size: 21px;
     margin-bottom: 8px;
   }
 }
@@ -2980,10 +2985,11 @@ button {
 }
 
 .traffic-way_text {
-  font-size: 30px;
+  font-size: px;
   margin: 0;
   color: #4b4b4b;
   width: calc(100% - 300px - 105px);
+  text-align: justify;
 }
 
 .traffic-info_item {
@@ -3001,7 +3007,7 @@ button {
 }
 
 .traffic-info_item h2 a:hover {
-  color: #009683;
+  opacity: 0.5;
 }
 
 .traffic-info_item ul li {
