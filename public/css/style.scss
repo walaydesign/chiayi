@@ -2017,7 +2017,7 @@ button {
       width: 16px;
       height: 96px;
       margin: 30px auto;
-      transform: translateX(-30px);
+      transform: translateX(-15px);
     }
     &_name {
       position: absolute;
@@ -2681,6 +2681,15 @@ button {
     font-size: 41px;
     color: $not-just-black;
     font-weight: 700;
+    margin-bottom: 5px;
+    &-intro {
+      text-align: center;
+      color: #B4B4B4;
+      font-size: 25px;
+      margin: 0;
+    }
+  }
+  &_station {
     margin-bottom: 43px;
   }
   &_next {
@@ -2772,6 +2781,11 @@ button {
     }
     &_name {
       font-size: 31px;
+      &-intro {
+        font-size: 19px;
+      }
+    }
+    &_station {
       margin-bottom: 32px;
     }
     &_next {
@@ -2886,7 +2900,6 @@ button {
     }
     &_name {
       font-size: 23px;
-      margin-bottom: 23px;
     }
     &_next {
       width: 10px;

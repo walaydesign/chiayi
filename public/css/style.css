@@ -2031,8 +2031,8 @@ button {
   width: 16px;
   height: 96px;
   margin: 30px auto;
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
 }
 
 .route_place_name {
@@ -2681,6 +2681,17 @@ button {
   font-size: 41px;
   color: #4b4b4b;
   font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.railway_name-intro {
+  text-align: center;
+  color: #B4B4B4;
+  font-size: 25px;
+  margin: 0;
+}
+
+.railway_station {
   margin-bottom: 43px;
 }
 
@@ -2785,6 +2796,11 @@ button {
   }
   .railway_name {
     font-size: 31px;
+  }
+  .railway_name-intro {
+    font-size: 19px;
+  }
+  .railway_station {
     margin-bottom: 32px;
   }
   .railway_next {
@@ -2895,7 +2911,6 @@ button {
   }
   .railway_name {
     font-size: 23px;
-    margin-bottom: 23px;
   }
   .railway_next {
     width: 10px;
