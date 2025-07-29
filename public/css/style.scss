@@ -118,6 +118,11 @@ button {
         background-color: $sky-blue;
       }
     }
+    &-marrs {
+      &::after {
+        background-color: $marrs-green;
+      }
+    }
   }
   .container {
     display: flex;
@@ -1825,6 +1830,73 @@ button {
           }
         }
       }
+      &-marrs {
+        .route {
+          &_pin {
+            svg {
+              path {
+                fill: $marrs-green;
+              }
+            }
+          }
+          &_feat {
+            &_title {
+              background-color: $marrs-green;
+            }
+          }
+          &_day {
+            &_title {
+              color: $marrs-green;
+            }
+            &_arrow {
+              path {
+                fill: $marrs-green;
+              }
+            }
+          }
+          &_hotel {
+            &_title {
+              svg {
+                path {
+                  fill: $marrs-green;
+                }
+              }
+            }
+            h4 {
+              color: $marrs-green;
+            }
+          }
+          &_place {
+            &_arrow,
+            &_name {
+              background-color: $marrs-green;
+            }
+            &_text {
+              h4 {
+                color: $marrs-green;
+              }
+            }
+            &_info,
+            &_next {
+              svg {
+                path {
+                  fill: $marrs-green;
+                }
+              }
+            }
+            &_next {
+              path {
+                fill: $marrs-green;
+              }
+            }
+          }
+        }
+        .railway_next {
+          path {
+            fill: $marrs-green;
+          }
+        }
+      }
     }
     .lantern {
       position: absolute;
@@ -1868,6 +1940,7 @@ button {
     }
     &_text {
       padding-left: 60px;
+      padding-top: 40px;
       p {
         font-size: 30px;
         color: #252525;
@@ -1991,10 +2064,17 @@ button {
       h3 {
         font-size: 36px;
         margin-bottom: 33px;
+        .sm {
+          font-size: 20px;
+        }
       }
       h4 {
         font-size: 28px;
         margin-bottom: 44px;
+        &.transport-intro {
+          font-size: 27px;
+          line-height: 1.6;
+        }
       }
     }
     &_info {
@@ -2082,6 +2162,10 @@ button {
               margin: 18px 0 0;
               text-align: justify;
             }
+            &_subtitle {
+              font-size: 29px;
+              margin: 12px 0 0;
+            }
           }
           &-wrap {
             display: flex;
@@ -2096,6 +2180,9 @@ button {
         &:last-child {
           margin-bottom: 0;
         }
+      }
+      .route_place_tag {
+        bottom: 48.8px;
       }
     }
   }
@@ -2220,10 +2307,16 @@ button {
         h3 {
           font-size: 32px;
           margin-bottom: 24px;
+          .sm {
+            font-size: 18px;
+          }
         }
         h4 {
           font-size: 20px;
           margin-bottom: 35px;
+          &.transport-intro {
+            font-size: 19px;
+          }
         }
       }
       &_info {
@@ -2252,6 +2345,9 @@ button {
               &_intro {
                 font-size: 20px;
                 margin-top: 14px;
+              }
+              &_subtitle {
+                font-size: 20px;
               }
             }
           }
@@ -2430,10 +2526,16 @@ button {
         h3 {
           font-size: 23px;
           margin-bottom: 11px;
+          .sm {
+            font-size: 13px;
+          }
         }
         h4 {
           font-size: 18px;
           margin-bottom: 12px;
+          &.transport-intro {
+            font-size: 17px;
+          }
         }
       }
       &_info {
@@ -2477,6 +2579,9 @@ button {
                 font-size: 18px;
                 margin-top: 11px;
               }
+              &_subtitle {
+                font-size: 18px;
+              }
             }
           }
         }
@@ -2487,6 +2592,9 @@ button {
         }
         .route_place_infowrap {
           margin-bottom: 35px !important;
+        }
+        .route_place_tag {
+          bottom: 35.2px;
         }
       }
     }
@@ -3132,3 +3240,5 @@ button {
     }
   }
 }
+
+

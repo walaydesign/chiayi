@@ -109,6 +109,10 @@ button {
   background-color: #82d0f5;
 }
 
+.header.border-marrs::after {
+  background-color: #009683;
+}
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1793,6 +1797,50 @@ button {
   fill: #D06C15;
 }
 
+.route-inner.color-marrs .route_pin svg path {
+  fill: #009683;
+}
+
+.route-inner.color-marrs .route_feat_title {
+  background-color: #009683;
+}
+
+.route-inner.color-marrs .route_day_title {
+  color: #009683;
+}
+
+.route-inner.color-marrs .route_day_arrow path {
+  fill: #009683;
+}
+
+.route-inner.color-marrs .route_hotel_title svg path {
+  fill: #009683;
+}
+
+.route-inner.color-marrs .route_hotel h4 {
+  color: #009683;
+}
+
+.route-inner.color-marrs .route_place_arrow, .route-inner.color-marrs .route_place_name {
+  background-color: #009683;
+}
+
+.route-inner.color-marrs .route_place_text h4 {
+  color: #009683;
+}
+
+.route-inner.color-marrs .route_place_info svg path, .route-inner.color-marrs .route_place_next svg path {
+  fill: #009683;
+}
+
+.route-inner.color-marrs .route_place_next path {
+  fill: #009683;
+}
+
+.route-inner.color-marrs .railway_next path {
+  fill: #009683;
+}
+
 .route-inner .lantern {
   position: absolute;
   right: 5.73vw;
@@ -1837,6 +1885,7 @@ button {
 
 .route_feat_text {
   padding-left: 60px;
+  padding-top: 40px;
 }
 
 .route_feat_text p {
@@ -1999,9 +2048,18 @@ button {
   margin-bottom: 33px;
 }
 
+.route_place_text h3 .sm {
+  font-size: 20px;
+}
+
 .route_place_text h4 {
   font-size: 28px;
   margin-bottom: 44px;
+}
+
+.route_place_text h4.transport-intro {
+  font-size: 27px;
+  line-height: 1.6;
 }
 
 .route_place_info {
@@ -2111,6 +2169,11 @@ button {
   text-align: justify;
 }
 
+.route_place.railway .route_place_text .railway_subtitle {
+  font-size: 29px;
+  margin: 12px 0 0;
+}
+
 .route_place.railway .route_place_text-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2126,6 +2189,10 @@ button {
 
 .route_place-manyspots .row:last-child {
   margin-bottom: 0;
+}
+
+.route_place-manyspots .route_place_tag {
+  bottom: 48.8px;
 }
 
 @media screen and (max-width: 1700px) {
@@ -2235,9 +2302,15 @@ button {
     font-size: 32px;
     margin-bottom: 24px;
   }
+  .route_place_text h3 .sm {
+    font-size: 18px;
+  }
   .route_place_text h4 {
     font-size: 20px;
     margin-bottom: 35px;
+  }
+  .route_place_text h4.transport-intro {
+    font-size: 19px;
   }
   .route_place_info {
     margin-bottom: 15px;
@@ -2263,6 +2336,9 @@ button {
   .route_place.railway .route_place_text .railway_intro {
     font-size: 20px;
     margin-top: 14px;
+  }
+  .route_place.railway .route_place_text .railway_subtitle {
+    font-size: 20px;
   }
   .route-inner .lantern {
     right: 40px;
@@ -2434,9 +2510,15 @@ button {
     font-size: 23px;
     margin-bottom: 11px;
   }
+  .route_place_text h3 .sm {
+    font-size: 13px;
+  }
   .route_place_text h4 {
     font-size: 18px;
     margin-bottom: 12px;
+  }
+  .route_place_text h4.transport-intro {
+    font-size: 17px;
   }
   .route_place_info {
     margin-bottom: 15px;
@@ -2478,11 +2560,17 @@ button {
     font-size: 18px;
     margin-top: 11px;
   }
+  .route_place.railway .route_place_text .railway_subtitle {
+    font-size: 18px;
+  }
   .route_place-manyspots .row {
     margin-bottom: 0;
   }
   .route_place-manyspots .route_place_infowrap {
     margin-bottom: 35px !important;
+  }
+  .route_place-manyspots .route_place_tag {
+    bottom: 35.2px;
   }
 }
 
