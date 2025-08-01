@@ -21,3 +21,11 @@ $(".header_top").click(function(){
     $("html, body").animate({scrollTop: 0},300);
 })
 
+$(window).on("resize scroll", function () {
+    if ($(window).scrollTop()>0) {
+        $(".header_top").addClass("active");
+    } else {
+        $(".header_top").removeClass("active");
+    }
+})
+

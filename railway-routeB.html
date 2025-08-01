@@ -147,9 +147,6 @@
           </button>
         </div>
       </div>
-      <button class="header_top d-xl-block d-none">
-        <img src="./public/img/arrow-up.svg" alt="" />
-      </button>
     </header>
 
     <main class="main">
@@ -161,8 +158,8 @@
           <h1>搭乘阿里山火車從海拔30公尺爬升至<br class="d-md-block d-none">2,216公尺，進入《紐約時報》<br class="d-md-block d-none">2025年全球必訪勝地</h1>
         </div>
         <img class="banner_train d-md-none" src="./public/img/railway-train.png" alt="">
-        <img class="banner_mountain d-md-block d-none" src="./public/img/railway-banner.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-        <img class="banner_mountain d-md-none" src="./public/img/railway-banner-m.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img class="banner_mountain d-md-block d-none" src="./public/img/railway-banner-train.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <img class="banner_mountain d-md-none" src="./public/img/railway-banner-train-m.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <img class="banner_graphic" src="./public/img/railway-banner-graphic.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
         <img class="banner_en" src="./public/img/banner-home-en.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
       </div>
@@ -204,28 +201,7 @@
             <div class="container">
               <h2 class="route_day_title">DAY 1</h2>
               <div class="route_day_content">
-                <!-- <div class="railway_station">
-                  <h2 class="railway_name">鄒族部落體驗</h2>
-                  <p class="railway_name-intro">來吉、樂野、達邦、特富野、里佳、山美、新美、茶山、逐鹿部落站</p>
-                </div>
-                <svg
-                        class="railway_next"
-                        width="16"
-                        height="96"
-                        viewBox="0 0 16 96"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
-                          fill="#ABCD03"
-                        />
-                </svg> -->
                 <div class="route_place route_place-manyspots">
-                  <!-- <div class="route_place_text d-lg-none mb-4">
-                    <h3>鄒族部落體驗</h3>
-                    <h4>來吉、樂野、達邦、特富野、里佳、山美、新美、茶山、逐鹿部落站</h4>                    
-                  </div> -->
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="route_place_pic">
@@ -559,6 +535,21 @@
                           </div>
                       </div>
                     </div>
+                    <div class="col-lg-6">
+                      <svg
+                        class="route_place_next"
+                        width="16"
+                        height="96"
+                        viewBox="0 0 16 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.2929 95.7071C7.68342 96.0976 8.31659 96.0976 8.70711 95.7071L15.0711 89.3431C15.4616 88.9526 15.4616 88.3195 15.0711 87.9289C14.6805 87.5384 14.0474 87.5384 13.6569 87.9289L8 93.5858L2.34315 87.9289C1.95263 87.5384 1.31946 87.5384 0.928936 87.9289C0.538412 88.3195 0.538412 88.9526 0.928936 89.3431L7.2929 95.7071ZM8 0L7 4.37114e-08L7 95L8 95L9 95L9 -4.37114e-08L8 0Z"
+                          fill="#ABCD03"
+                        />
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="route_place">
@@ -831,7 +822,7 @@
                           <div class="route_place_pic_inner">
                             <img
                               class="route_place_img"
-                              src="./public/img/railway-routeA-1-1.png"
+                              src="./public/img/railway-routeA-1-1.jpg"
                               alt=""
                             />
                             <img
@@ -1098,6 +1089,12 @@
         </div>
       </div>
     </footer>
+
+    <button class="header_top">
+      <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.01192 9.42027L0.315918 7.90827L11.4999 0.780273L22.6839 7.90827L21.9879 9.42027L11.4999 2.70027L1.01192 9.42027Z" fill="#4B4B4B"/>
+      </svg>
+    </button>
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
