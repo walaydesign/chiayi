@@ -1596,7 +1596,7 @@ button {
 }
 
 .route_link_text p {
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 500;
   letter-spacing: 0.08em;
   margin-top: 5px;
@@ -2086,6 +2086,12 @@ button {
   line-height: 1.6;
 }
 
+.route_place_text h4.transport-intro .near {
+  font-size: 23px;
+  color: #B4B4B4;
+  font-weight: normal;
+}
+
 .route_place_info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2207,6 +2213,10 @@ button {
           align-items: flex-end;
 }
 
+.route_place.railway#zhushan {
+  margin-bottom: 156px;
+}
+
 .route_place-manyspots .row {
   margin-bottom: 75px;
 }
@@ -2269,7 +2279,7 @@ button {
     font-size: 42px;
   }
   .route_link_text p {
-    font-size: 16px;
+    font-size: 18px;
   }
   .route_link_icon img {
     width: 50px;
@@ -2335,6 +2345,9 @@ button {
   }
   .route_place_text h4.transport-intro {
     font-size: 19px;
+  }
+  .route_place_text h4.transport-intro .near {
+    font-size: 16px;
   }
   .route_place_info {
     margin-bottom: 15px;
@@ -2544,6 +2557,9 @@ button {
   .route_place_text h4.transport-intro {
     font-size: 17px;
   }
+  .route_place_text h4.transport-intro .near {
+    font-size: 14px;
+  }
   .route_place_info {
     margin-bottom: 15px;
   }
@@ -2586,6 +2602,9 @@ button {
   }
   .route_place.railway .route_place_text .railway_subtitle {
     font-size: 18px;
+  }
+  .route_place.railway#zhushan {
+    margin-bottom: 60px;
   }
   .route_place-manyspots .row {
     margin-bottom: 0;
@@ -2630,7 +2649,7 @@ button {
     margin-bottom: 7px;
   }
   .route_pic p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .route_pin {
     padding-top: 5px;
@@ -2669,7 +2688,8 @@ button {
     margin-bottom: 30px;
   }
   .route_link_text h5 {
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 700;
   }
   .route_link_text p {
     font-size: 12px;
@@ -2679,11 +2699,9 @@ button {
   .route_link_icon {
     font-size: 28px;
   }
-}
-
-@media screen and (max-width: 400px) {
   .route_link_icon h3 {
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 700;
   }
 }
 
@@ -3117,6 +3135,7 @@ button {
   color: #4b4b4b;
   width: calc(100% - 300px - 105px);
   text-align: justify;
+  font-size: 30px;
 }
 
 .traffic-info_item {

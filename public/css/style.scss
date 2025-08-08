@@ -1568,7 +1568,7 @@ button {
         margin-bottom: 0;
       }
       p {
-        font-size: 19px;
+        font-size: 21px;
         font-weight: 500;
         letter-spacing: 0.08em;
         margin-top: 5px;
@@ -2092,6 +2092,11 @@ button {
         &.transport-intro {
           font-size: 27px;
           line-height: 1.6;
+          .near {
+            font-size: 23px;
+            color: $gray-2;
+            font-weight: normal;
+          }
         }
       }
     }
@@ -2191,6 +2196,9 @@ button {
           }
         }
       }
+      &#zhushan {
+        margin-bottom: 156px;
+      }
     }
     &-manyspots {
       .row {
@@ -2258,7 +2266,7 @@ button {
           font-size: 42px;
         }
         p {
-          font-size: 16px;
+          font-size: 18px;
         }
       }
       &_icon {
@@ -2334,6 +2342,9 @@ button {
           margin-bottom: 35px;
           &.transport-intro {
             font-size: 19px;
+            .near {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -2553,6 +2564,9 @@ button {
           margin-bottom: 12px;
           &.transport-intro {
             font-size: 17px;
+            .near {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -2603,6 +2617,9 @@ button {
             }
           }
         }
+        &#zhushan {
+          margin-bottom: 60px;
+        }
       }
       &-manyspots {
         .row {
@@ -2648,7 +2665,7 @@ button {
         margin-bottom: 7px;
       }
       p {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
     &_pin {
@@ -2688,7 +2705,8 @@ button {
       }
       &_text {
         h5 {
-          font-size: 24px;
+          font-size: 26px;
+          font-weight: 700;
         }
         p {
           font-size: 12px;
@@ -2698,18 +2716,22 @@ button {
       }
       &_icon {
         font-size: 28px;
-      }
-    }
-  }
-  @media screen and (max-width: 400px) {
-    &_link {
-      &_icon {
         h3 {
-          font-size: 24px;
+          font-size: 26px;
+          font-weight: 700;
         }
       }
     }
   }
+  // @media screen and (max-width: 400px) {
+  //   &_link {
+  //     &_icon {
+  //       h3 {
+  //         font-size: 24px;
+  //       }
+  //     }
+  //   }
+  // }
   @media screen and (max-width: 350px) {
     &_link {
       &_text {
@@ -3105,6 +3127,7 @@ button {
       color: $not-just-black;
       width: calc(100% - 300px - 105px);
       text-align: justify;
+      font-size: 30px;
     }
   }
   &-info {
