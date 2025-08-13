@@ -3286,4 +3286,37 @@ button {
     width: calc(100% - 17px - 6px);
   }
 }
+
+.lang-en .header_nav_item > a, .lang-jp .header_nav_item > a, .lang-thai .header_nav_item > a {
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1900px) {
+  .lang-jp .header_nav_item > a {
+    font-size: 14px;
+    padding: 0 12px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .lang-thai .header_nav_item > a {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .lang-korean .header_nav_item > a {
+    font-size: 14px;
+    padding: 0 12px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .lang-en .header_nav_item > a, .lang-jp .header_nav_item > a, .lang-korean .header_nav_item > a, .lang-thai .header_nav_item > a {
+    font-size: 14px;
+    padding: 14px 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

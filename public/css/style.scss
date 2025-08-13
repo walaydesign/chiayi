@@ -3282,4 +3282,45 @@ button {
   }
 }
 
+.lang {
+  &-en, &-jp, &-thai {
+    .header_nav_item > a {
+      font-size: 14px;
+      padding: 0 20px;
+    }
+  }
+  @media screen and (max-width: 1900px) {
+    &-jp {
+      .header_nav_item > a {
+        font-size: 14px;
+        padding: 0 12px;
+      }
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    &-thai {
+      .header_nav_item > a {
+        font-size: 12px;
+        padding: 0 8px;
+      }
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    &-korean {
+      .header_nav_item > a {
+        font-size: 14px;
+        padding: 0 12px;
+      }
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    &-en, &-jp, &-korean, &-thai {
+      .header_nav_item > a {
+        font-size: 14px;
+        padding: 14px 10px;
+      }
+    }
+  }
+}
+
 
